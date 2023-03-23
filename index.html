@@ -1,1345 +1,772 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <!-- The above 3 meta tags *must* come first in the head -->
-    <base href="commingsoon.html">
-    <!-- SITE TITLE -->
-    <title>CSD_SIGMA_2K23</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico"/>
-    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" media="all"/>
-    <link rel="stylesheet" href="assets/libs/fontawesome/css/font-awesome.min.css" media="all"/>
-    <link rel="stylesheet" href="assets/libs/maginificpopup/magnific-popup.css" media="all"/>
-    <link rel="stylesheet" href="assets/libs/timer/TimeCircles.css" media="all"/>
-    <link rel="stylesheet" href="assets/libs/owlcarousel/owl.carousel.min.css" media="all" />
-    <link rel="stylesheet" href="assets/libs/owlcarousel/owl.theme.default.min.css" media="all" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,700%7cPoppins:300,400,400i,600,600i,700,800,900"/>
-    <link rel="stylesheet" href="assets/css/style-default.min.css" media="all"/>
-    <link rel="stylesheet" href="assets/css/link.css">
+    <meta charset="utf-8">
+    <title>BO LUNCH BOX</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Rashi+Hebrew:wght@300;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Rashi+Hebrew:wght@200;300;500&display=swap" rel="stylesheet">
-    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="home">
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
 
-<div class="lgx-container ">
-    <header>
-    <div id="lgx-header" class="lgx-header">
-        <div class="lgx-header-position lgx-header-position-white lgx-header-position-fixed "> 
-            <div class="lgx-container"> <!--lgx-container-fluid-->
-                <nav class="navbar navbar-default lgx-navbar">
-                    <div class="navbar-header">
-                        <div class="lgx-logo">
-                            <a href="index.html" class="lgx-scroll">
-                                <img src="assets/img/logo.png" />
-                            </a>
-                        </div>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <div class="lgx-nav-right navbar-right">
-                            <div class="lgx-cart-area">
-                                <a class="lgx-btn lgx-btn-red" href="https://forms.gle/Hi6G3NLDHbfXMZnc6" target="_blank"><span>Register Now</span></a>
-                            </div>
-                        </div>
-                        <ul class="nav navbar-nav lgx-nav navbar-right">
-                            <li><a class="lgx-scroll" href="index.html" style="text-shadow: 2px 2px 3px black;"><b>Home</b> </a></li>
-                            <li><a class="lgx-scroll" href="#promo" style="text-shadow: 2px 2px 3px black;"><b>Promo</b> </a></li>
-                            <li><a class="lgx-scroll" href="#lgx-fest" style="text-shadow: 2px 2px 3px black;"><b>About</b> </a></li>
-                            <li><a class="lgx-scroll" href="#lgx-Events"style="text-shadow: 2px 2px 3px black;"><b>Events</b></a></li>
-                            <li><a class="lgx-scroll" href="#lgx-schedule" style="text-shadow: 2px 2px 3px black;"><b>Schedule</b></a></li>
-                            <!-- <li><a class="lgx-scroll" href="#lgx-sponsors">Sponsors</a></li> -->
-                            <!-- <li><a class="lgx-scroll" href="#lgx-news">News</a></li> -->
-                            <li><a class="lgx-scroll" href="mailto:ravikumar_csd@srkrec.edu.in" style="text-shadow: 2px 2px 3px black;"><b>Contact</b></a></li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
-                </nav>
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>SRKR Engineering College, MCR Web Solutions, Bhimavaram, 534204
+                    </small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91 9010972333</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>bolunchbox@gmail.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://twitter.com/bo_lunchbox"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100091071965266"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/bo_lunchbox/"><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://www.youtube.com/channel/UCLfhE5z624iHsoNADjPUSSg"><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
             </div>
         </div>
     </div>
-</header>
+    <!-- Topbar End -->
 
-<!-- BANNER sTARTS -->
-<section style=" background-image: url(assets/img/banner.png);">
-    <div class="lgx-banner lgx-banner3">
-        <div class="lgx-banner-style" style=" background-image: linear-gradient(to right top, #3f979b, #33ae9f, #46c397, #71d785, #a6e76c, #a6e76c, #a6e76c, #a6e76c, #71d785, #46c397, #33ae9f, #3f979b);">
-            <div class="lgx-inner lgx-inner-fixed">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-7">
-                            <div class="lgx-banner-info"> <!--lgx-banner-info-center lgx-banner-info-black lgx-banner-info-big lgx-banner-info-bg-->
-                                <div class="lgx-countdown-area">
-                                <!-- Date Format :"Y/m/d" || For Example: 1017/10/5  -->
-                                    <div id="lgx-countdown" data-date="2023/3/25 09::00"></div>
-                                </div>
-                                <h2 class="title">SIGMA <span><b>2</b><b>K</b><b>2</b><b>3</b></span></h2>
-                                <h3 class="date"><i class="fa fa-calendar"></i> 25 March, 2023</h3>
-                                <h3 class="location"><i class="fa fa-map-marker"></i> Second Floor, Technology Center, SRKR.</h3>
-                                <div class="action-area">
-                                    <div class="lgx-video-area">
-                                        <a class="lgx-btn lgx-btn-red" href="https://forms.gle/Hi6G3NLDHbfXMZnc6" target="_blank">Register Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-5" id="form">
-                            <!-- <div class="lgx-registration-form-box lgx-registration-banner-box"> 
-                                <div class="lgx-registration-form">
-                                    <form action="register.php" method="post">
-                                    <input name="sname" value="" class="wpcf7-form-control form-control" placeholder="Your Name ..." type="text">
-                                    <input name="regno" value="" class="wpcf7-form-control form-control" placeholder="Registration Number ..." type="text">
-                                    <input name="mobile" value="" class="wpcf7-form-control form-control" placeholder="Mobile Number ..." type="text">
-                                    <select name="dept" class="wpcf7-form-control wpcf7-select lgx-select" >
-                                        <option selected >Select your Department ......</option>
-                                        <option value="CSD">CSD</option>
-                                        <option value="CSE">CSE</option>
-                                        <option value="IOT">CSE(IOT)</option>
-                                        <option value="CSBS">CSBS</option>
-                                        <option value="IT">IT</option>
-                                        <option value="AIDS">AIDS</option>
-                                        <option value="AIML">AIML</option>
-                                        <option value="ECE">ECE</option>
-                                        <option value="EEE">EEE</option>
-                                        <option value="CIVIL">CIVIL</option>
-                                        <option value="MECH">MECH</option>
-                                    </select>
-                                    <input class="wpcf7-form-control wpcf7-submit lgx-submit" type="submit" name="submit">
-                                    </form>
-                                </div>
-                            </div> -->
-                            <a href="https://forms.gle/VaAu4AsvrxYJTJFz6"><img src="assets/img/qr.png" alt=""></a>
 
-                            <div class="marquee" style="align-items:center;margin: 5px;">
-                                <p>WE ARE OPEN FOR REGISTRATIONS..! INTERESTED CANDIDATES <U>SCAN THE QR</U>  OR CONTACT <u>70138 34973</u></p>
-                            </div>
+    <!-- Navbar & Carousel Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+               <table>
+                        <tr>
+                              <td>
+                                <h1 class="m-0"><i class="fa fa-user-tie me-lg-4"></i>LUNCH BOX</h1>
+                               
+                               </td>
+                         </tr>
+                 </table>
+               
+                
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="price.html" class="dropdown-item">Pricing Plan</a>
+                            <a href="feature.html" class="dropdown-item">Our features</a>
+                            <a href="team.html" class="dropdown-item">Team Members</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                         </div>
                     </div>
-                    <!--//.ROW-->
-
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <!-- //.CONTAINER -->
+                <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">Login</a>
+                <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">Register</a>
+            </div>
+        </nav>
+
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Subscription based</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Pickup and Drop Delivery Service</h1>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Subscription based</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Pickup and Drop Delivery Service</h1>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Navbar & Carousel End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts py-5 pt-lg-0">
+        <div class="container py-5 pt-lg-0">
+            <div class="row gx-0">
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-users text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">Delivery Agents</h5>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">10</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-check text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-primary mb-0">Total Clients</h5>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <h1 class="mb-0" data-toggle="counter-up">100</h1>
+                                    </td>
+                                    <td>
+                                        <h1>+</h1>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-users text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">To Schools</h5>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">2</h1>
+                        </div>
+                    </div>
+                </div>
+
                 
             </div>
-            <!-- //.INNER -->
         </div>
     </div>
-</section>
-<!--BANNER END-->
+    <!-- Facts Start -->
 
 
-
-
-<!--ABOUT-->
-<section>
-    <div id="lgx-fest" class="lgx-about">
-        <div class="lgx-inner"  >
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-7">
-                        <div class="lgx-about-content-area">
-                            <div class="lgx-heading">
-                                <h2 class="heading">Sigma 2K23</h2>
-                                <h3 class="subheading">Explore Infinity</h3>
-                            </div>
-                            <div class="lgx-about-content">
-                                <p class="text" style="font-family: 'Noto Rashi Hebrew', serif;">
-                                    <span class="subheading" style="font-family: 'Noto Rashi Hebrew', serif;">Sit tight... <br> We,the CSD,are also in the RACE!</span><br>
-                                    SIGMA_2K23 is an all-and-out technical fest focussing on individuals in improving their konwledge in various domains.This year we are coming with contest foucssed on recent <b>path-breaking AI Tools</b> like <b>CHAT GPT,CODEX,MID JOURNEY,LEONARDO.AI and PLAYGROUND.AI</b> etc.<br>
-                                    Wait.. <br> we also got our own mark in conducting online contests like <B>REAL TIME QUIZES, INTERACTIVE HOUSIE</B>.Now, we are adding one more online contest to our line-up i.e., <b>ONLINE SPELL BEE</b>
-                                </p>
-                                <div class="about-date-area">
-                                    <h4 class="date"><span>25</span></h4>
-                                    <p><span>March 2023</span>Technical Fest of <B>COMPUTER SCIENCE & DESIGN</B></p>
-                                </div>
-
-                                <div class="section-btn-area">
-                                    <a href='./assets/img/Fest_Poster.png' download class="lgx-btnn lgx-btn-red lgx-scroll"><button  align="center" style='font-family:"Roboto Condensed", sans-serif;'><i class="fa fa-download"></i> Download Poster</button>
-                                    </a>
-                                    <!-- <a class="lgx-btn" href="about.html"><span>More About</span></a>
-                                    <a class="lgx-btn lgx-btn-red lgx-scroll" href="#lgx-registration"><span>Buy Ticket Now</span></a> -->
-                                </div>
-                            </div>
+    <!-- About Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
+                        <h1 class="mb-0">The Best Solution With 1.5 Years of Experience</h1>
+                    </div>
+                    <p class="mb-4">We Are Providing A Pick-Up And Drop Delivery Service For The Lunch Box Of The Students.By This Idea Your Child Can Eat The Healthy and Hygienic Food Daily</p>
+                    <div class="row g-0 mb-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>On Time Delivery</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Professional Staff</h5>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>24/7 Support</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Fair Prices</h5>
                         </div>
                     </div>
-                    <!-- <div class="col-sm-12 col-md-5">
-                        <div class="lgx-about-img-sp">
-                            <img src="assets/img/sigma_about.png" alt="about">
+                    <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white"></i>
                         </div>
-                    </div> -->
-                </div>
-            </div><!-- //.CONTAINER -->
-        </div><!-- //.INNER -->
-    </div>
-
-</section>
-<!--ABOUT END-->
-
-
-<section>
-    <div id="lgx-schedule" style=" background-image: linear-gradient(to right top, #3f979b, #33ae9f, #46c397, #71d785, #a6e76c, #a6e76c, #a6e76c, #a6e76c, #71d785, #46c397, #33ae9f, #3f979b);">
-        <div class="lgx-inner" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="lgx-heading lgx-heading-white">
-                            <h2 class="heading">Our Events</h2>
-                            <h3 class="subheading">Technical Events</h3>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Call to ask any question</h5>
+                            <h4 class="text-primary mb-0">+91 9010972333</h4>
                         </div>
                     </div>
+                    <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request A Callback</a>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="lgx-tab lgx-tab2"> <!--lgx-tab2 lgx-tab-vertical-->
-                            <ul class="nav nav-pills lgx-nav lgx-nav-nogap lgx-nav-colorful">  <!--lgx-nav-nogap lgx-nav-colorful-->
-                                <li><a data-toggle="pill" href="#home"><h3> <span>GAMEAIFY</span></h3> <p><span>Game with AI</span></p></a></li>
-                                <li><a data-toggle="pill" href="#home"><h3>CODE <span>CRUNCH</span></h3> <p><span>Coding Challenge</span></p></a></li>
-                                <li><a data-toggle="pill" href="#menu1"><h3>STARTUP <span>SPARK</span></h3> <p><span>Startup Pitch</span></p></a></li>
-                                <li><a data-toggle="pill" href="#menu2"><h3>AI <span>APEX</span></h3> <p><span>Task with AI</span></p></a></li>
-                                <li><a data-toggle="pill" href="#menu3"><h3>SPELL <span>CASTERS</span></h3> <p><span>Online Speel Bee Contest</span></p></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="lgx-heading lgx-heading-white">
-                            <br>
-                            <h3 class="subheading">Non Technical Events</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="lgx-tab lgx-tab2"> <!--lgx-tab2 lgx-tab-vertical-->
-                            <ul class="nav nav-pills lgx-nav lgx-nav-nogap lgx-nav-colorful">  <!--lgx-nav-nogap lgx-nav-colorful-->
-                                <li><a data-toggle="pill" href="#home"><h3>CLUE <span>MINATI</span></h3> <p><span>Tech Treasure Hunt</span></p></a></li>
-                                <li><a data-toggle="pill" href="#home"><h3>FREE FIRE <span>CONTEST</span></h3> <p><span>FF Tournament </span></p></a></li>
-                                <li><a data-toggle="pill" href="#menu1"><h3>ONLINE <span>HOUSIE</span></h3> <p><span>Real Time Housie</span></p></a></li>
-                                <li><a data-toggle="pill" href="#menu2"><h3>QUIZ <span>O RAMA</span></h3> <p><span>Online Fun Quize</span></p></a></li>
-                                <li><a data-toggle="pill" href="#menu3"><h3>SPOT <span>GAMES</span></h3> <p><span>Fun Games</span></p></a></li>
-                            </ul>
-                        </div>
+                <div class="col-lg-5" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/about.jpg" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
-        </div>  
-    </div>
-</section>
-
-
-
-<section id="promo">
-    <div id="lgx-fest" class="lgx-about" >
-        <div class="lgx-inner" >
-            <div class="container">
-                <h3 class="subheading">Take a quick look of our Tech Promo! #SIGMA_2K23</h3>
-            </div>
-            <!-- //video part start -->
-            <div class="container" > 
-                <div id="lgx-video" class="lgx-video lgx-video-christmas" style="background-image: url(assets/img/tunbnail.png);"   >
-                    <div class="lgx-inner">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    
-                                    <div class="lgx-video-area">
-                                        <figure>
-                                            <figcaption>
-                                                <div class="video-icon">
-                                                    <div class="lgx-vertical">
-                                                        <a id="myModalLabel" class="icon" href="#" data-toggle="modal" data-target="#lgx-modal">
-                                                            <i class="fa fa-play " aria-hidden="true"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </figcaption>
-                                        </figure>
-                                        <!-- Modal-->
-                                        <div id="lgx-modal" class="modal fade lgx-modal">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <iframe id="modalvideo" src="https://www.youtube.com/embed/vAEGzaF1f7Q" allowfullscreen></iframe>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> <!-- //.Modal-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- //.CONTAINER -->
-                    </div><!-- //.INNER -->
-                </div>
-            </div>
-            <!-- //video part end -->
         </div>
     </div>
+    <!-- About End -->
+
+
+    <!-- Features Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Why Choose Us</h5>
+                <h1 class="mb-0">Best Service In Our Local Area With Low Price</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-cubes text-white"></i>
+                            </div>
+                            <h4>Best In Industry</h4>
+                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                        </div>
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-award text-white"></i>
+                            </div>
+                            <h4>Award Winning</h4>
+                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="img/feature.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-users-cog text-white"></i>
+                            </div>
+                            <h4>Professional Staff</h4>
+                            <p class="mb-0">The Staff We Have In Our Company Are Very Dignified And Decent</p>
+                        </div>
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-phone-alt text-white"></i>
+                            </div>
+                            <h4>24/7 Support</h4>
+                            <p class="mb-0">If You Are Facing Any Problem About Your Lunch Box Delivery Our Team Will Available For You </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features Start -->
+
+
+
+
+
+    <!-- Pricing Plan Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Pricing Plans</h5>
+                <h1 class="mb-0">We are Offering Competitive Prices for Our Clients</h1>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="bg-light rounded">
+                        <div class="border-bottom py-4 px-5 mb-4">
+                            <h4 class="text-primary mb-1">Free Trail</h4>
+                            <small class="text-uppercase">For West-Berry School</small>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h1 class="display-5 mb-3">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;">₹</small>0.00<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ One Week</small>
+                            </h1>
+                            <div class="d-flex justify-content-between mb-3"><span>One Week Free For Beginners</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>On Time Delivery</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Other Personal Deliveries</span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Free Delivery In BO App</span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="bg-white rounded shadow position-relative" style="z-index: 1;">
+                        <div class="border-bottom py-4 px-5 mb-4">
+                            <h4 class="text-primary mb-1">Standard Plan</h4>
+                            <small class="text-uppercase">For West-Berry School</small>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h1 class="display-5 mb-3">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;">₹</small>599.00<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                            </h1>
+                            <div class="d-flex justify-content-between mb-3"><span>Lunch Box Live Tracking</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>On Time Delivery</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Other Personal Deliveries For Low Cost</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Free Delivery In BO App</span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="bg-light rounded">
+                        <div class="border-bottom py-4 px-5 mb-4">
+                            <h4 class="text-primary mb-1">Advanced Plan</h4>
+                            <small class="text-uppercase">For Large Size Business</small>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h1 class="display-5 mb-3">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>149.00<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                            </h1>
+                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing Plan End -->
+
+
+    <!-- Quote Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">Request A Quote</h5>
+                        <h1 class="mb-0">Need A Free Quote? Please Feel Free to Contact Us</h1>
+                    </div>
+                    <div class="row gx-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                            <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>Reply within 24 hours</h5>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                            <h5 class="mb-4"><i class="fa fa-phone-alt text-primary me-3"></i>24 hrs telephone support</h5>
+                        </div>
+                    </div>
+                    <p class="mb-4">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                    <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Call to ask any question</h5>
+                            <h4 class="text-primary mb-0">+012 345 6789</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-xl-12">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <select class="form-select bg-light border-0" style="height: 55px;">
+                                        <option selected>Select A Service</option>
+                                        <option value="1">Service 1</option>
+                                        <option value="2">Service 2</option>
+                                        <option value="3">Service 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-dark w-100 py-3" type="submit">Request A Quote</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Testimonial</h5>
+                <h1 class="mb-0">What Our Clients Say About Our Digital Services</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Team Members</h5>
+                <h1 class="mb-0">Professional Stuffs Ready to Help Your Business</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Full Name</h4>
+                            <p class="text-uppercase m-0">Designation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Full Name</h4>
+                            <p class="text-uppercase m-0">Designation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Full Name</h4>
+                            <p class="text-uppercase m-0">Designation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Latest Blog</h5>
+                <h1 class="mb-0">Read The Latest Articles from Our Blog Post</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/blog-1.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                            </div>
+                            <h4 class="mb-3">How to build a website</h4>
+                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/blog-2.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                            </div>
+                            <h4 class="mb-3">How to build a website</h4>
+                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/blog-3.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                            </div>
+                            <h4 class="mb-3">How to build a website</h4>
+                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog Start -->
+
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 mb-5">
+            <div class="bg-white">
+                <div class="owl-carousel vendor-carousel">
+                    <img src="img/vendor-1.jpg" alt="">
+                    <img src="img/vendor-2.jpg" alt="">
+                    <img src="img/vendor-3.jpg" alt="">
+                    <img src="img/vendor-4.jpg" alt="">
+                    <img src="img/vendor-5.jpg" alt="">
+                    <img src="img/vendor-6.jpg" alt="">
+                    <img src="img/vendor-7.jpg" alt="">
+                    <img src="img/vendor-8.jpg" alt="">
+                    <img src="img/vendor-9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
     
 
-<!--SPEAKERS-->
-<section >
-    <div id="lgx-Events" class="lgx-speakers lgx-speakers2" >
-        
-        <div class="lgx-inner" style="background-image: linear-gradient(to right top, #3f979b, #33ae9f, #46c397, #71d785, #a6e76c, #a6e76c, #a6e76c, #a6e76c, #71d785, #46c397, #33ae9f, #3f979b);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="lgx-heading lgx-heading-white">
-                            <h2 class="heading" style="text-shadow: 2px 2px 5px rgb(25, 25, 25);">What You Can get @ Rs.200/-</h2>
-                            <h3 class="subheading">Let's Expand Our Domain Knowledge Here..!</h3>
-                        </div>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                        <a href="index.html" class="navbar-brand">
+                            <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Startup</h1>
+                        </a>
+                        <p class="mt-3 mb-4">Lorem diam sit erat dolor elitr et, diam lorem justo amet clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.</p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                                <button class="btn btn-dark">Sign Up</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-
-                
-                <!--//.ROW-->
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-speaker"> <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
-                            <figure>
-                                <a class="profile-img" ><img src="assets/img/Sigma_Events/1.png" alt="Speaker"/></a>
-                                <!-- <div class="speaker-info">
-                                        <h3 class="title"><a >GAMEALIFY</a></h3>
-                                        <h4 class="subtitle">Game Designing with AI Tools</h4>
-                                    </div>   -->
-                            </figure>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Get In Touch</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">123 Street, New York, USA</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">info@example.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+012 345 67890</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Quick Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Popular Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-speaker"> <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
-                            <figure>
-                                <a class="profile-img" ><img src="assets/img/Sigma_Events/2.png" alt="Speaker"/></a>
-                                <!-- <div class="speaker-info">
-                                        <h3 class="title"><a >GAMEALIFY</a></h3>
-                                        <h4 class="subtitle">Game Designing with AI Tools</h4>
-                                    </div>   -->
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-speaker"> <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
-                            <figure>
-                                <a class="profile-img" ><img src="assets/img/Sigma_Events/3.png" alt="Speaker"/></a>
-                                <!-- <div class="speaker-info">
-                                        <h3 class="title"><a >GAMEALIFY</a></h3>
-                                        <h4 class="subtitle">Game Designing with AI Tools</h4>
-                                    </div>   -->
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-speaker"> <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
-                            <figure>
-                                <a class="profile-img" ><img src="assets/img/Sigma_Events/4.png" alt="Speaker"/></a>
-                                <!-- <div class="speaker-info">
-                                        <h3 class="title"><a >GAMEALIFY</a></h3>
-                                        <h4 class="subtitle">Game Designing with AI Tools</h4>
-                                    </div>   -->
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-speaker"> <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
-                            <figure>
-                                <a class="profile-img" ><img src="assets/img/Sigma_Events/5.png" alt="Speaker"/></a>
-                                <!-- <div class="speaker-info">
-                                        <h3 class="title"><a href="speaker.html">Jonathon Doe</a></h3>
-                                        <h4 class="subtitle">Ceo of LogicHunt</h4>
-                                    </div>   -->
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-speaker"> <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
-                            <figure>
-                                <a class="profile-img" ><img src="assets/img/Sigma_Events/6.png" alt="Speaker"/></a>
-                                <!-- <div class="speaker-info">
-                                        <h3 class="title"><a href="speaker.html">Jonathon Doe</a></h3>
-                                        <h4 class="subtitle">Ceo of LogicHunt</h4>
-                                    </div>   -->
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-speaker"> <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
-                            <figure>
-                                <a class="profile-img" ><img src="assets/img/Sigma_Events/7.png" alt="Speaker"/></a>
-                                <!-- <div class="speaker-info">
-                                        <h3 class="title"><a href="speaker.html">Jonathon Doe</a></h3>
-                                        <h4 class="subtitle">Ceo of LogicHunt</h4>
-                                    </div>   -->
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-speaker"> <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
-                            <figure>
-                                <a class="profile-img" ><img src="assets/img/Sigma_Events/8.png" alt="Speaker"/></a>
-                                <!-- <div class="speaker-info">
-                                        <h3 class="title"><a href="speaker.html">Jonathon Doe</a></h3>
-                                        <h4 class="subtitle">Ceo of LogicHunt</h4>
-                                    </div>   -->
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-speaker"> <!--lgx-single-speaker-circle lgx-single-speaker2 lgx-single-speaker3-->
-                            <figure>
-                                <a class="profile-img" ><img src="assets/img/Sigma_Events/9.png" alt="Speaker"/></a>
-                                <!-- <div class="speaker-info">
-                                        <h3 class="title"><a href="speaker.html">Jonathon Doe</a></h3>
-                                        <h4 class="subtitle">Ceo of LogicHunt</h4>
-                                    </div>   -->
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <!--//.ROW-->
-                <div class="section-btn-area">
-                    <!-- <a class="lgx-btn lgx-btn-big" href="speakers.html"><span>View More Events</span></a> -->
-                    <!-- <a class="lgx-btn lgx-btn-red lgx-btn-big" href="#form"><span>Register Now & Participate</span></a> -->
                 </div>
             </div>
-            <!-- //.CONTAINER -->
         </div>
-        <!-- //.INNER -->
     </div>
-</section>
-<!--SPEAKERS END-->
-
-<!--SCHEDULE-->
-<section>
-    <div id="lgx-schedule" class="lgx-schedule">
-        <div class="lgx-inner" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="lgx-heading lgx-heading-white">
-                            <h2 class="heading">Event Schedule</h2>
-                            <h3 class="subheading">Welcome to the dedicated to building remarkable Schedule!</h3>
-                        </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Your Site Name</a>. All Rights Reserved. 
+						
+						<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+						Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="lgx-tab lgx-tab2"> <!--lgx-tab2 lgx-tab-vertical-->
-                            <ul class="nav nav-pills lgx-nav lgx-nav-nogap lgx-nav-colorful">  <!--lgx-nav-nogap lgx-nav-colorful-->
-                                <li class="active"><a data-toggle="pill" href="#home"><h3>Morning <span>Session</span></h3></a></li>
-                                <li><a data-toggle="pill" href="#menu1"><h3>After Noon <span>Session</span></h3></a></li>
-                                <li><a data-toggle="pill" href="#menu2"><h3>Tech <span>Events</span></h3></a></li>
-                                <li><a data-toggle="pill" href="#menu3"><h3>Non Tech <span>Events</span></h3></a></li>
-                            </ul>
-                            <div class="tab-content lgx-tab-content">
-                                <div id="home" class="tab-pane fade in active">
-                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingOne">
-                                                <div class="panel-title">
-                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                        <div class="lgx-single-schedule">
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">09:00 <span>Am</span> - 10:00 <span>Am</span></h4>
-                                                                <h3 class="title">Event Inauguration  </h3>
-                                                                <h4 class="author-info"> BY <span>M Jagapathi Raju Garu</span> , Principal SRKR.</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Get ready to witness the Wonderful tech fest, <b> 'Sigma2k23'</b>,from CSD. where innovation and technology collide. The much-awaited event will be inaugurated by our respected Principal, setting the tone for a plethora of tech-related activities and competitions. Join us for an exciting journey of discovery and exploration!
-                                                    </p>
-                                                     <h4 class="location"><strong>Location:</strong>   Second Floor , Tech Cener , <span>Idealab</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingTwo">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">10:00 <span>Am</span> - 11.30 <span>Am</span></h4>
-                                                                <h3 class="title">GameAIfy</h3>
-                                                                <h4 class="author-info">With <span>Codex</span> , Open AI Chatbot</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        The event invites all the game enthusiasts and developers to showcase their skills and imagination in creating an interactive and exciting game. With the power of AI, participants can bring their characters to life, design unique challenges, and create a thrilling gaming experience. So, join us for this exciting event and let your creativity soar as you craft your very own game using the latest AI technology.                                                        </p>
-                                                        <h4 class="location"><strong>Location:</strong>   Second Floor , Tech Cener , <span>Idealab</span> </h4>
-                                                    </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingThree">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">Starts <span>at</span> -10: 00<span>Am</span></h4>
-                                                                <h3 class="title">Clue Minati</h3>
-                                                                <h4 class="author-info">Follow the clues <span>unlock the adventure </span> ,  Join us for a thrilling Treasure Hunt!</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        The event invites all the game enthusiasts and developers to showcase their skills and imagination in creating an interactive and exciting game. With the power of AI, participants can bring their characters to life, design unique challenges, and create a thrilling gaming experience. So, join us for this exciting event and let your creativity soar as you craft your very own game using the latest AI technology.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong> First Floor , Tech Cener , <span>Idealab</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingfive">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">11 : 30 <span>Am</span> - 12.30 <span>Pm</span></h4>
-                                                                <h3 class="title">CODE CRUNCH</h3>
-                                                                <h4 class="author-info">Codethon <span> with live Quize</span> , Solve the Code </h4>
-                                                            </div>  
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Join the Codethon to showcase your coding skills and compete with fellow programmers to solve challenging problems.This event get more excited with live quiz that will keep you engaged and test your knowledge on various programming concepts. So, get ready to code and answer some fun quiz questions to win exciting prizes! 
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>   Second Floor , Tech Cener , <span>Idealab</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingravi">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseravi" aria-expanded="true" aria-controls="collapseravi">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">11:30 <span>Am</span> - 12.30 <span>Pm</span></h4>
-                                                                <h3 class="title">Free Fire Contest</h3>
-                                                                <h4 class="author-info">Survive or Die Trying <span>Thrilling Battle Royale Experience </span>,of Free Fire </h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapseravi" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Join our Free Fire Contest and show off your gaming skills! Compete against the best Free Fire players from around the world and stand a chance to win exciting prizes. Whether you're a seasoned player or just starting out, this contest is open to everyone. So, gear up and get ready for some intense gaming action!
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong> First Floor , <span>Idea Lab</span> Tech Center  </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingfour">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">10:30 <span>Am</span> - 12.30 <span>Pm</span></h4>
-                                                                <h3 class="title">STARTUP SPARK</h3>
-                                                                <h4 class="author-info">Showcase your <span> Startup Ideas </span>, To make them Implemented</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Join With us to showcase your innovative ideas and compete against each other to emerge as the best start-up. Participants are required to bring a well-prepared document that outlines their business plan and strategies. The event is an opportunity to network with like-minded individuals . Join us for this exciting event and witness the birth of the next big thing in the start-up world!
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  Front Lab, Second Floor , <span>Idea Lab</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-
-                                </div>
-
-
-                                <div id="menu1" class="tab-pane fade">
-
-                                    <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingsigm">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapsesi" aria-expanded="true" aria-controls="collapsesigm">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author author-multi">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">02:00 <span>Pm</span> - 03:00 <span>Pm</span></h4>
-                                                                <h3 class="title">AI Apex</h3>
-                                                                <h4 class="author-info">with  <span>Chat GPT</span> , <span>PlayGround AI</span> & <span>Mid Journey</span></h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapsesigm" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Get ready for an exciting AI-based contest that will challenge your problem-solving skills! In this event, you will be given a task to solve using free AI tools, and your solutions will be judged based on accuracy, creativity, and efficiency. This contest is designed to test your knowledge of AI and machine learning, and to encourage you to explore the possibilities of these cutting-edge technologies. So, if you are passionate about AI and love a good challenge, this contest is perfect for you! Join us now and show off your skills!
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>   Second Floor , Tech Cener , <span>Idealab</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingpra">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapsepra" aria-expanded="true" aria-controls="collapsepra">
-                                                        <div class="lgx-single-schedule">
-                                                            
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">02:00 <span>Pm</span> - 04.00 <span>Pm</span></h4>
-                                                                <h3 class="title">QUIZ O RAMA</h3>
-                                                                <h4 class="author-info">A <span>FUN QUIZE</span> , with live interaction</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapsepra" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Get ready for an unforgettable night of laughter and entertainment with our fun quiz filled with hilarious and relatable questions about everyday life! with Some interactive elements that will keep you engaged and entertained throughout the Event.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  CSD Stall, Idealab , <span>Tech Center</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingThree2">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2" aria-expanded="true" aria-controls="collapseThree2">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">02:00 <span>Pm</span> - 03:00 <span>Pm</span></h4>
-                                                                <h3 class="title">Online Housie</h3>
-                                                                <h4 class="author-info">Play interactive <span>HOUSIE</span> , & Win Exceting Gifts</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Get ready for an exciting game, <b> online Housie</b> with multiple players from around the College. Join the fun and challenge your luck with the interactive gameboard. Mark your numbers as they get called out and race to complete your card before anyone else. It's an addictive game that will keep you entertained for hours, so grab your friends and join the virtual fun now!                                                    </p>
-                                                        <h4 class="location"><strong>Location:</strong>  CSD Stall, Idealab , <span>Tech Center</span> </h4>
-                                                    </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingvira">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapsevira" aria-expanded="true" aria-controls="collapsevira">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">03:00 <span>Pm</span> - 04:00 <span>Pm</span></h4>
-                                                                <h3 class="title">Fun Games</h3>
-                                                                <h4 class="author-info">Play Some <span>Funny Games </span> , & Win Exceting Gifts</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapsevira" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        We are Planing Some Exceting Fun Games, WHich are reviled on fest Day. Play with us... 
-                                                    </p>
-                                                        <h4 class="location"><strong>Location:</strong>  CSD Stall, Idealab , <span>Tech Center</span> </h4>
-                                                    </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingpunee">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapsepunee" aria-expanded="true" aria-controls="collapsepunee">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">11:00 <span>Am</span> - 04:00 <span>Pm</span></h4>
-                                                                <h3 class="title">Spell Casters</h3>
-                                                                <h4 class="author-info">Join  <span>Funny Games </span> , & Win Exceting Gifts</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapsepunee" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Get ready to cast some spells with Spell Casters - a unique event that combines the excitement of a spell bee with the thrill of magic. Join us anytime between 10 am to 4 pm and participate in this fun-filled competition with a live dashboard to keep you engaged. Test your vocabulary and your magical abilities as you compete against other players to become the ultimate Spell Caster. Don't miss out on the chance to show off your skills and win amazing prizes. Register now and let the games begin!                                                    </p>
-                                                        <h4 class="location"><strong>Location:</strong>  CSD Stall, Idealab , <span>Tech Center</span> </h4>
-                                                    </div>
-                                            </div>  
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div id="menu2" class="tab-pane fade">
-
-                                    <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingsig">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesig" aria-expanded="true" aria-controls="collapsesig">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">10:00 <span>Am</span> - 11.30 <span>Am</span></h4>
-                                                                <h3 class="title">GameAIfy</h3>
-                                                                <h4 class="author-info">With <span>Codex</span> , Open AI Chatbot</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapsesig" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingsig">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        The event invites all the game enthusiasts and developers to showcase their skills and imagination in creating an interactive and exciting game. With the power of AI, participants can bring their characters to life, design unique challenges, and create a thrilling gaming experience. So, join us for this exciting event and let your creativity soar as you craft your very own game using the latest AI technology.                                                        </p>
-                                                        <h4 class="location"><strong>Location:</strong>   Second Floor , Tech Cener , <span>Idealab</span> </h4>
-                                                    </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingfive">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">11 : 30 <span>Am</span> - 12.30 <span>Pm</span></h4>
-                                                                <h3 class="title">CODE CRUNCH</h3>
-                                                                <h4 class="author-info">Codethon <span> with live Quize</span> , Solve the Code </h4>
-                                                            </div>  
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Join the Codethon to showcase your coding skills and compete with fellow programmers to solve challenging problems.This event get more excited with live quiz that will keep you engaged and test your knowledge on various programming concepts. So, get ready to code and answer some fun quiz questions to win exciting prizes! 
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>   Second Floor , Tech Cener , <span>Idealab</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingfour">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">10:30 <span>Am</span> - 12.30 <span>Pm</span></h4>
-                                                                <h3 class="title">STARTUP SPARK</h3>
-                                                                <h4 class="author-info">Showcase your <span> Startup Ideas </span>, To make them Implemented</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Join With us to showcase your innovative ideas and compete against each other to emerge as the best start-up. Participants are required to bring a well-prepared document that outlines their business plan and strategies. The event is an opportunity to network with like-minded individuals . Join us for this exciting event and witness the birth of the next big thing in the start-up world!
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  Front Lab, Second Floor , <span>Idea Lab</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingpunee">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapsepunee" aria-expanded="true" aria-controls="collapsepunee">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">11:00 <span>Am</span> - 04:00 <span>Pm</span></h4>
-                                                                <h3 class="title">Spell Casters</h3>
-                                                                <h4 class="author-info">Join  <span>Funny Games </span> , & Win Exceting Gifts</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapsepunee" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Get ready to cast some spells with Spell Casters - a unique event that combines the excitement of a spell bee with the thrill of magic. Join us anytime between 10 am to 4 pm and participate in this fun-filled competition with a live dashboard to keep you engaged. Test your vocabulary and your magical abilities as you compete against other players to become the ultimate Spell Caster. Don't miss out on the chance to show off your skills and win amazing prizes. Register now and let the games begin!                                                    </p>
-                                                        <h4 class="location"><strong>Location:</strong>  CSD Stall, Idealab , <span>Tech Center</span> </h4>
-                                                    </div>
-                                            </div>  
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingOne2">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author author-multi">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">02:00 <span>Pm</span> - 03:0 <span>Pm</span></h4>
-                                                                <h3 class="title">AI Apex</h3>
-                                                                <h4 class="author-info">with  <span>Chat GPT</span> , <span>PlayGround AI</span> & <span>Mid Journey</span></h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapseOne2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Get ready for an exciting AI-based contest that will challenge your problem-solving skills! In this event, you will be given a task to solve using free AI tools, and your solutions will be judged based on accuracy, creativity, and efficiency. This contest is designed to test your knowledge of AI and machine learning, and to encourage you to explore the possibilities of these cutting-edge technologies. So, if you are passionate about AI and love a good challenge, this contest is perfect for you! Join us now and show off your skills!
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>   Second Floor , Tech Cener , <span>Idealab</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div id="menu3" class="tab-pane fade">
-
-                                    <div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingThree">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">Starts <span>at</span> -10: 00<span>Am</span></h4>
-                                                                <h3 class="title">Clue Minati</h3>
-                                                                <h4 class="author-info">Follow the clues <span>unlock the adventure </span> ,  Join us for a thrilling Treasure Hunt!</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        The event invites all the game enthusiasts and developers to showcase their skills and imagination in creating an interactive and exciting game. With the power of AI, participants can bring their characters to life, design unique challenges, and create a thrilling gaming experience. So, join us for this exciting event and let your creativity soar as you craft your very own game using the latest AI technology.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong> First Floor , Tech Cener , <span>Idealab</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingravi">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseravi" aria-expanded="true" aria-controls="collapseravi">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">11:30 <span>Am</span> - 12.30 <span>Pm</span></h4>
-                                                                <h3 class="title">Free Fire Contest</h3>
-                                                                <h4 class="author-info">Survive or Die Trying <span>Thrilling Battle Royale Experience </span>,of Free Fire </h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapseravi" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Join our Free Fire Contest and show off your gaming skills! Compete against the best Free Fire players from around the world and stand a chance to win exciting prizes. Whether you're a seasoned player or just starting out, this contest is open to everyone. So, gear up and get ready for some intense gaming action!
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong> First Floor , <span>Idea Lab</span> Tech Center  </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingThree2">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2" aria-expanded="true" aria-controls="collapseThree2">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">02:00 <span>Pm</span> - 03:00 <span>Pm</span></h4>
-                                                                <h3 class="title">Online Housie</h3>
-                                                                <h4 class="author-info">Play interactive <span>HOUSIE</span> , & Win Exceting Gifts</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Get ready for an exciting game, <b> online Housie</b> with multiple players from around the College. Join the fun and challenge your luck with the interactive gameboard. Mark your numbers as they get called out and race to complete your card before anyone else. It's an addictive game that will keep you entertained for hours, so grab your friends and join the virtual fun now!                                                    </p>
-                                                        <h4 class="location"><strong>Location:</strong>  CSD Stall, Idealab , <span>Tech Center</span> </h4>
-                                                    </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingvira">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapsevira" aria-expanded="true" aria-controls="collapsevira">
-                                                        <div class="lgx-single-schedule">
-                                                            <!-- <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
-                                                            </div> -->
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">03:00 <span>Pm</span> - 04:00 <span>Pm</span></h4>
-                                                                <h3 class="title">Fun Games</h3>
-                                                                <h4 class="author-info">Play Some <span>Funny Games </span> , & Win Exceting Gifts</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapsevira" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        We are Planing Some Exceting Fun Games, WHich are reviled on fest Day. Play with us... 
-                                                    </p>
-                                                        <h4 class="location"><strong>Location:</strong>  CSD Stall, Idealab , <span>Tech Center</span> </h4>
-                                                    </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default lgx-panel">
-                                            <div class="panel-heading" role="tab" id="headingpra">
-                                                <div class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapsepra" aria-expanded="true" aria-controls="collapsepra">
-                                                        <div class="lgx-single-schedule">
-                                                            
-                                                            <div class="schedule-info">
-                                                                <h4 class="time">02:00 <span>Pm</span> - 04.00 <span>Pm</span></h4>
-                                                                <h3 class="title">QUIZ O RAMA</h3>
-                                                                <h4 class="author-info">A <span>FUN QUIZE</span> , with live interaction</h4>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div id="collapsepra" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                                <div class="panel-body">
-                                                    <p class="text">
-                                                        Get ready for an unforgettable night of laughter and entertainment with our fun quiz filled with hilarious and relatable questions about everyday life! with Some interactive elements that will keep you engaged and entertained throughout the Event.
-                                                    </p>
-                                                    <h4 class="location"><strong>Location:</strong>  CSD Stall, Idealab , <span>Tech Center</span> </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--//.ROW-->
-                <!-- <div class="section-btn-area schedule-btn-area">
-                    <a class="lgx-btn lgx-btn-big" href="#"><span>Download Schedule (PDF)</span></a>
-                    <a class="lgx-btn lgx-btn-red lgx-btn-big" href="#"><span>Connect via facebook</span></a>
-                </div> -->
             </div>
-            <!-- //.CONTAINER -->
         </div>
-        <!-- //.INNER -->
     </div>
-</section>
-<!--SCHEDULE END-->
+    <!-- Footer End -->
 
 
-
-<!--SPONSORED-->
-<!-- <section>
-    <div id="lgx-sponsors" class="lgx-sponsors lgx-sponsors-black">
-        <div class="lgx-inner-bg">
-            <div class="lgx-inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="lgx-heading lgx-heading-white">
-                                <h2 class="heading">Offcial Sponsonrs</h2>
-                                <h3 class="subheading">Welcome to the dedicated to building remarkable Sponsores!</h3>
-                            </div>
-                        </div>
-                    </div>
-                    //main row
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="sponsors-area sponsors-area-colorfull-border">
-                                <div class="single">
-                                    <a class="" href="#"><img src="http://placehold.it/467x157" alt="sponsor"/></a>
-                                </div>
-                                <div class="single">
-                                    <a class="" href="#"><img src="http://placehold.it/467x157" alt="sponsor"/></a>
-                                </div>
-                                <div class="single">
-                                    <a class="" href="#"><img src="http://placehold.it/467x157" alt="sponsor"/></a>
-                                </div>
-                                <div class="single">
-                                    <a class="" href="#"><img src="http://placehold.it/467x157" alt="sponsor"/></a>
-                                </div>
-                                <div class="single">
-                                    <a class="" href="#"><img src="http://placehold.it/467x157" alt="sponsor"/></a>
-                                </div>
-                                <div class="single">
-                                    <a class="" href="#"><img src="http://placehold.it/467x157" alt="sponsor"/></a>
-                                </div>
-                                <div class="single">
-                                    <a class="" href="#"><img src="http://placehold.it/467x157" alt="sponsor"/></a>
-                                </div>
-                            </div>
-                        </div>
-                        <//col
-                    </div>
-                    <div class="section-btn-area sponsor-btn-area">
-                        <a class="lgx-btn" href="#">Become A Sponsor</a>
-                    </div>
-                </div>
-                //container
-            </div>
-        </div>
-        //lgx-inner
-    </div>
-</section> -->
-<!--SPONSORED END-->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-
-
-    <!--REGISTRATION-->
-    <!-- Add registrations with gradient -->
-    <!--REGISTRATION END-->
-
-
-    <!--TESTIMONIALS -->
-    <!-- Add testmonials with wight background -->
-    <!--TESTIMONIALS END-->
-
-    <!--News-->
-    <!-- <section>
-        <div id="lgx-news" class="lgx-news">
-            <div class="lgx-inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="lgx-heading">
-                                <h2 class="heading">From Our Blog</h2>
-                                <h3 class="subheading">Conferences dedicated to building remarkable events.</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-4">
-                            <div class="lgx-single-news">
-                                <figure>
-                                    <a href="news-single.html"><img src="http://placehold.it/1144x690" alt=""></a>
-                                </figure>
-                                <div class="single-news-info">
-                                    <div class="meta-wrapper">
-                                        <span>April 25, 2021</span>
-                                        <span>by <a href="#">Riazsagar</a></span>
-                                        <span><a href="#">Design</a></span>
-                                    </div>
-                                    <h3 class="title"><a href="news-single.html">Brooklyn Beta was the most important conferen best tristique</a></h3>
-                                    <a class="lgx-btn lgx-btn-white lgx-btn-sm" href="#"><span>Read More</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4">
-                            <div class="lgx-single-news">
-                                <figure>
-                                    <a href="news-single.html"><img src="http://placehold.it/1144x690" alt=""></a>
-                                </figure>
-                                <div class="single-news-info">
-                                    <div class="meta-wrapper">
-                                        <span>April 25, 2021</span>
-                                        <span>by <a href="#">Riazsagar</a></span>
-                                        <span><a href="#">Design</a></span>
-                                    </div>
-                                    <h3 class="title"><a href="news-single.html">Brooklyn Beta was the most important conferen best tristique</a></h3>
-                                    <a class="lgx-btn lgx-btn-white lgx-btn-sm" href="#"><span>Read More</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4">
-                            <div class="lgx-single-news">
-                                <figure>
-                                    <a href="news-single.html"><img src="http://placehold.it/1144x690" alt=""></a>
-                                </figure>
-                                <div class="single-news-info">
-                                    <div class="meta-wrapper">
-                                        <span>April 25, 2021</span>
-                                        <span>by <a href="#">Riazsagar</a></span>
-                                        <span><a href="#">Design</a></span>
-                                    </div>
-                                    <h3 class="title"><a href="news-single.html">Brooklyn Beta was the most important conferen best tristique</a></h3>
-                                    <a class="lgx-btn lgx-btn-white lgx-btn-sm" href="#"><span>Read More</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-btn-area">
-                        <a class="lgx-btn" href="news.html">View More Blogs</a>
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </section> -->
-    <!--News END-->
-
-
-    <!--TRAVEL INFO-->
-    <!-- <section>
-        <div id="lgx-travelinfo" class="lgx-travelinfo">
-            <div class="lgx-inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="lgx-heading">
-                                <h2 class="heading">Event Information</h2>
-                                <h3 class="subheading">Conferences dedicated to building remarkable events.</h3>
-                            </div>
-                        </div> -->
-                        <!--//main COL-->
-                    <!-- </div>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="lgx-travelinfo-content">
-                                <div class="lgx-travelinfo-single">
-                                    <img src="assets/img/info-icon1.png" alt="location"/>
-                                    <h3 class="title">Venue</h3>
-                                    <p class="info">Docklands Convention Centre 58 Wurundjeri Way Dablin, 3000</p>
-                                </div>
-                                <div class="lgx-travelinfo-single">
-                                    <img src="assets/img/info-icon2.png" alt="Transport"/>
-                                    <h3 class="title">Transport</h3>
-                                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do incididunt</p>
-                                </div>
-                                <div class="lgx-travelinfo-single">
-                                    <img src="assets/img/info-icon3.png" alt="Hotel & Restaurant"/>
-                                    <h3 class="title">Hotel & Restaurant</h3>
-                                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do incididunt</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!--//.ROW-->
-                <!-- </div> -->
-                <!-- //.CONTAINER -->
-            <!-- </div>
-        </div>
-    </section> -->
-    <!--TRAVEL INFO END-->
-
-
-
-
-<!--VIDEO-->
-<!--//.VIDEO END-->
-
-
-
-
-
-<!--FOOTER-->
-<footer>
-    <div id="lgx-footer" class="lgx-footer"> <!--lgx-footer-white-->
-        <div class="lgx-inner-footer">
-            
-            <div class="container">
-                <div class="lgx-footer-area">
-                    <div class="lgx-footer-single">
-                        <a class="logo" href="index.html"><img src="assets/img/footer_logo.png" alt="Logo"></a>
-                    </div> <!--//footer-area-->
-                    <div class="lgx-footer-single">
-                        <h3 class="footer-title">Venue Location </h3>
-                        <h4 class="date">
-                            25 ,March 2023
-                        </h4>
-                        <address>
-                            Second Floor, Technology Center <br>
-                            Idealab SRKR
-                        </address>
-                        <!-- <a id="myModalLabel2" data-toggle="modal" data-target="#lgx-modal-map" class="map-link" href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> View Map location</a> -->
-                    </div>
-                    <div class="lgx-footer-single">
-                        <h3 class="footer-title">Social Media</h3>
-                        <p class="text">You can follow us <br> on Social Media</p>
-                        <ul class="list-inline lgx-social-footer">
-                            <li><a href="https://www.facebook.com/srkrcsd/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <!-- <li><a href=""><i class="fa fa-gmail" aria-hidden="true"></i></a></li> -->
-                            <li><a href="https://www.instagram.com/srkrcsd/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                    <!--<div class="lgx-footer-single">
-                        <h2 class="footer-title">Instagram Feed</h2>
-                        <div id="instafeed">
-                        </div>
-                    </div>-->
-                </div>
-                <!-- Modal-->
-                <!-- <div id="lgx-modal-map" class="modal fade lgx-modal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="lgxmapcanvas map-canvas-default" id="map_canvas"> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> //.Modal -->
-
-                <!-- <div class="lgx-footer-bottom">
-                    <div class="lgx-copyright">
-                        <p> <span></span> SRKRS CSD <a href="http://www.themearth.com/">Sigma2k23.</a> </p>
-                    </div>
-                </div> -->
-
-            </div>
-            <!-- //.CONTAINER -->
-        </div>
-        <!-- //.footer Middle -->
-    </div>
-</footer>
-<!--FOOTER END-->
-
-
-</div>
-
-<script src="assets/js/main.js"></script>
-<script src="assets/js/particles.min.js"></script>
-
-<!--//.LGX SITE CONTAINER-->
-<!-- *** ADD YOUR SITE SCRIPT HERE *** -->
-<!-- JQUERY  -->
-<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-
-<!-- BOOTSTRAP JS  -->
-<script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- Smooth Scroll  -->
-<script src="assets/libs/jquery.smooth-scroll.js"></script>
-
-<!-- SKILLS SCRIPT  -->
-<script src="assets/libs/jquery.validate.js"></script>
-
-<!-- if load google maps then load this api, change api key as it may expire for limit cross as this is provided with any theme -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQvRGGtL6OrpP5xVMxq_0NgiMiRhm3ycI"></script>
-
-<!-- CUSTOM GOOGLE MAP -->
-<script type="text/javascript" src="assets/libs/gmap/jquery.googlemap.js"></script>
-
-<!-- adding magnific popup js library -->
-<script type="text/javascript" src="assets/libs/maginificpopup/jquery.magnific-popup.min.js"></script>
-
-<!-- Owl Carousel  -->
-<script src="assets/libs/owlcarousel/owl.carousel.min.js"></script>
-
-<!-- COUNTDOWN   -->
-<script src="assets/libs/countdown.js"></script>
-<script src="assets/libs/timer/TimeCircles.js"></script>
-
-<!-- Counter JS -->
-<script src="assets/libs/waypoints.min.js"></script>
-<script src="assets/libs/counterup/jquery.counterup.min.js"></script>
-
-<!-- SMOTH SCROLL -->
-<script src="assets/libs/jquery.smooth-scroll.min.js"></script>
-<script src="assets/libs/jquery.easing.min.js"></script>
-
-<!-- type js -->
-<script src="assets/libs/typed/typed.min.js"></script>
-
-<!-- header parallax js -->
-<script src="assets/libs/header-parallax.js"></script>
-
-<!-- instafeed js -->
-
-<script src="assets/libs/instafeed.min.js"></script>
-
-<!-- CUSTOM SCRIPT  -->
-<script src="assets/js/custom.script.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
