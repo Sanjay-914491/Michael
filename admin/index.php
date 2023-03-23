@@ -4,8 +4,8 @@ session_start();
 if(isset($_POST['login'])){
   $uname = $_POST['uname'];
   $pass = $_POST['pass'];
-  $run = mysqli_fetch_assoc(mysqli_query($con ,"select * from admin where uname = '$uname'"));
-  if($run['pass']==$pass){
+  $run = mysqli_fetch_assoc(mysqli_query($con ,"select * from admin where uname  = '$uname'"));
+  if($run['pass']== $pass){
     $_SESSION['username'] = $uname;
     $_SESSION['password'] = $pass;
     header("location:admin.html");
@@ -68,9 +68,10 @@ if(isset($_POST['login'])){
             </p>
           </div>
         </div>
+        <form action="#" method="post">
         <div class="card mt-5 rounded-lg p-5 lg:p-7">
           <label class="relative flex">
-            <input
+            <input name="uname"
               class="form-input peer w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:z-10 hover:border-slate-400 focus:z-10 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
               placeholder="Username" type="text">
             <span
@@ -84,7 +85,7 @@ if(isset($_POST['login'])){
             </span>
           </label>
           <label class="relative mt-4 flex">
-            <input
+            <input name="pass"
               class="form-input peer w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:z-10 hover:border-slate-400 focus:z-10 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
               placeholder="Password" type="password">
             <span 
@@ -108,10 +109,11 @@ if(isset($_POST['login'])){
                 </a>
               </p>
             </div> -->
-          <button
+          <button type="submit" name="login"
             class="btn mt-5 w-full bg-primary font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90">
-            Login
+            Login 
           </button>
+          </form> 
           <!-- <div class="mt-4 text-center text-xs+">
               <p class="line-clamp-1">
                 <span>Already have an account? </span>

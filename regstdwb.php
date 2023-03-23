@@ -98,8 +98,19 @@ if(isset($_POST['submit'])){
           </div>
         </div>
         <div class="button">
-          <input type="submit" name="submit" value="Register">
+          <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_LUzFSL4vDJemYo/view" data-text="Pay for Lunch Box" data-color="#F05151" data-size="large">
+          <script>
+            (function(){
+              var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+              if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+              s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
+              rzp && rzp.init && rzp.init()}})();
+          </script>
+        </div>   
         </div>
+        <div class="button">
+          <input type="submit" name="submit" value="Register">
+        </div>  
       </form>
     </div>
   </div>
