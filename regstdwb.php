@@ -99,7 +99,7 @@ if(isset($_POST['submit'])){
         </div>
         <div class="button">
           <input type="submit" name="submit" value="Register">
-        </div>
+        </div>  
       </form>
     </div>
   </div>
