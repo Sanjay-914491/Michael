@@ -32,7 +32,7 @@
 </head>
 
 <body >
-<div class="container-fluid position-relative p-0">
+<!-- <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <a href="index.html" class="navbar-brand p-0">
                <table>
@@ -56,7 +56,7 @@
             </div>
         </nav>
 
-    </div>
+    </div> -->
     <section id="prices">
 
     <!-- Pricing Plan Start -->
@@ -120,7 +120,7 @@
                             <div class="d-flex justify-content-between mb-3"><span>On Time Delivery</span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-3"><span>Other Personal Deliveries For Low Cost (NON PACKAGED)</span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span>Free Delivery In BO App</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Buy Now</a>
+                            <a href="https://rzp.io/l/lunboxadvwb" class="btn btn-primary py-2 px-4 mt-4">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -174,7 +174,7 @@
                             <div class="d-flex justify-content-between mb-3"><span>On Time Delivery</span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-3"><span>Other Personal Deliveries For Low Cost (NON PACKAGED)</span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span>Free Delivery In BO App</span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Buy Now</a>
+                            <a href="https://rzp.io/l/lunboxstdbra" class="btn btn-primary py-2 px-4 mt-4">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -193,7 +193,7 @@
                             <div class="d-flex justify-content-between mb-3"><span>On Time Delivery</span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-3"><span>Other Personal Deliveries For Low Cost (NON PACKAGED)</span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span>Free Delivery In BO App</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Buy Now</a>
+                            <a href="https://rzp.io/l/9AUdiIp" class="btn btn-primary py-2 px-4 mt-4">Buy Now</a>
                         </div>
                     </div>
                 </div>
