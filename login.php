@@ -6,7 +6,7 @@ session_start();
 if(isset($_POST['login'])){
   $uname = $_POST['uname'];
   $pass = $_POST['pass'];
-  $run = mysqli_fetch_assoc(mysqli_query($con ,"select * from parent where uname = '$uname'"));
+  $run = mysqli_fetch_assoc(mysqli_query($con ,"select * from parent where pmoblie = '$uname'"));
   if($run['pass']==$pass){
     $_SESSION['username'] = $uname;
     $_SESSION['password'] = $pass;
@@ -113,8 +113,8 @@ if(isset($_POST['login'])){
                 </a>
               </p>
             </div> -->
-          <button name="login" type="submit"
-            class="btn mt-5 w-full bg-primary font-medium ">
+          <button name="login" type="submit" 
+            class="btn mt-5 w-full bg-primary font-medium " style="color: white;" >
             Login
           </button>
           </form>
