@@ -10,7 +10,7 @@ if(isset($_POST['login'])){
   if($run['pass']==$pass){
     $_SESSION['username'] = $uname;
     $_SESSION['password'] = $pass;
-    header("location:parent.html");
+    header("location:parent.php");
       
   }
 }
