@@ -68,7 +68,7 @@ if(isset($_POST['login'])){
             Parent Login
             </h2>
             <p class="text-slate-400 dark:text-navy-300">
-              Login Hear
+              Login here
             </p>
           </div>
         </div>
