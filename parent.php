@@ -101,22 +101,9 @@ $run = mysqli_fetch_assoc(mysqli_query($con,"select * from parent where pmobile 
         <a href="track.html" class="dropdown-item">Live Track</a>
         <a href="index.html" class="dropdown-item">Log Out</a>
     </div>
+    </div>
+    </div>
 </div>
-            
-                  <!--
-                          <a href="service.html" class="nav-item nav-link">Services</a>   
-                             <div class="nav-item dropdown">
-                           <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
-                           <div class="dropdown-menu m-0">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                             </div>
-                                </div>
-                  -->
-                 
-                  
-                </div>
-            </div>
         </nav>
 
         <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
