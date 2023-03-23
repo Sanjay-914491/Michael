@@ -90,7 +90,7 @@
         <a href="notification.html" class="dropdown-item">Notification</a>
         <a href="payment.html" class="dropdown-item">Payment</a>
         <a href="track.html" class="dropdown-item">Live Track</a>
-        <a href="#" class="dropdown-item">Log Out</a>
+        <a href="index.html" class="dropdown-item">Log Out</a>
     </div>
 </div>
             
