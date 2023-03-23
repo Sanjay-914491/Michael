@@ -8,8 +8,8 @@ if(isset($_POST['login'])){
   $pass = $_POST['pass'];
   $run = mysqli_fetch_assoc(mysqli_query($con ,"select * from parent where pmobile = '$uname'"));
   if($run['pass']==$pass){
-    $_SESSION['username'] = $uname;
-    $_SESSION['password'] = $pass;
+    $_SESSION['uname'] = $uname;
+    $_SESSION['pass'] = $pass;
     header("location:parent.php");
       
   }

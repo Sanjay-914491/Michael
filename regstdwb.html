@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 include "connect.php";
 if(isset($_POST['submit'])){
@@ -16,10 +16,9 @@ if(isset($_POST['submit'])){
   $run = mysqli_query($con,"insert into parent values ('$pmobile','$pass','$pname','$email','$address','$sname','$school','$rollno','$sclass','$saddr','$gender') ");
   if(isset($run)){
     echo " <script>alert('Data Entered Sucessfully')</script>";
-    // header("location:")
   }
 }
-?>
+?> -->
 <!DOCTYPE html>
 <!-- Created By CodingLab - www.codinglabweb.com -->
 <html lang="en" dir="ltr">
@@ -33,7 +32,7 @@ if(isset($_POST['submit'])){
   <div class="container">
     <div class="title">Registration</div>
     <div class="content">
-      <form action="#" method="post">
+      <form action="#" method="post" name="form1">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Parent Name</span>
@@ -41,12 +40,18 @@ if(isset($_POST['submit'])){
           </div>
           <div class="input-box">
             <span class="details">Mobile Number</span>
-            <input type="tel" name="pmobile" placeholder="Number" required>
+            <input type="text" name="pmobile" placeholder="Number" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="text" name="email" placeholder="Enter your email" required>
           </div>
+
+        
+        
+
+
+
           <div class="input-box">
             <span class="details">Address</span>
             <input type="text" name="address" placeholder="Address" required>
@@ -98,9 +103,30 @@ if(isset($_POST['submit'])){
             </label>
           </div>
         </div>
-        <!-- <div class="button">
+        <div class="button">
           <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_LUzFSL4vDJemYo/view" data-text="Pay for Lunch Box" data-color="#F05151" data-size="large">
-          <script>
+         <script>
+          function ValidateEmail(inputText)
+          {
+         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+         if(inputText.value.match(mailformat))
+         {
+       alert("Valid email address!");
+      document.form1.text1.focus();
+      return true;
+       } 
+       else 
+       {
+       alert("You have entered an invalid email address!");
+       document.form1.text1.focus();
+      return false;
+      }
+      }
+
+         </script>
+         
+         
+         <script>
             (function(){
               var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
               if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
@@ -108,12 +134,18 @@ if(isset($_POST['submit'])){
               rzp && rzp.init && rzp.init()}})();
           </script>
         </div>   
-        </div> -->
+        </div>
         <div class="button">
-          <input type="submit" name="submit" value="Register">
+          <input type="submit" onclick="ValidateEmail(document.form1.text1)" name="submit" value="Register">
         </div>  
       </form>
     </div>
   </div>
+
+
+
+
+
+  
 </body>
 </html>
