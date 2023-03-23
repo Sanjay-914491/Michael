@@ -58,7 +58,8 @@
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://twitter.com/bo_lunchbox"><i class="fab fa-twitter fw-normal"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100091071965266"><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://www.youtube.com/channel/UCLfhE5z624iHsoNADjPUSSg"><i class="fab fa-youtube fw-normal"></i></a>
+
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/bo_lunchbox/"><i class="fab fa-instagram fw-normal"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
                 </div>
@@ -94,9 +95,9 @@
                   <a href="about.html" class="nav-item nav-link active">Price plan</a> 
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">PROFILE</a>
+                <a href="profile.html" class="btn btn-primary py-2 px-4 ms-3">PROFILE</a>
                 <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">NOTIFICATION</a>
-                <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">LIVE TRACK</a>
+                <a href="track.html" class="btn btn-primary py-2 px-4 ms-3">LIVE TRACK</a>
                 <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">CALENDER</a>
                 <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">LANGUAGE</a>
                 <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">PAYMENT</a>
@@ -144,7 +145,7 @@
                         <h5 class="fw-bold text-primary text-uppercase">About Parent</h5>
                         <h1 class="mb-0"> Sanjay </h1>
                     </div>
-                    <p class="mb-4">Address
+                    <p class="mb-4">Home Address
                         </p>
                         <div class="section-title position-relative pb-3 mb-5">
                             <h5 class="fw-bold text-primary text-uppercase">About Child</h5>
@@ -311,7 +312,9 @@
                             <div class="d-flex mt-4">
                                 <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
                                 <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://www.youtube.com/channel/UCLfhE5z624iHsoNADjPUSSg"><i class="fab fa-youtube fw-normal"></i></a>
+
+                
                                 <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
                             </div>
                         </div>

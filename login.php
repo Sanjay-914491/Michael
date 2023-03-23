@@ -10,7 +10,7 @@ if(isset($_POST['login'])){
   if($run['pass']==$pass){
     $_SESSION['username'] = $uname;
     $_SESSION['password'] = $pass;
-    header("location:parent.html");
+    header("location:parent.php");
       
   }
 }
@@ -68,7 +68,7 @@ if(isset($_POST['login'])){
             Parent Login
             </h2>
             <p class="text-slate-400 dark:text-navy-300">
-              Login Hear
+              Login here
             </p>
           </div>
         </div>
