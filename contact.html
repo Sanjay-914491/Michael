@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Startup - Startup Website Template</title>
+    <title>BO LUNCH BOX</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -172,22 +172,44 @@
                     <form>
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;">
+                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;" id="p_name">
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px;">
+                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px;" id="p_mail"> 
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px;">
+                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px;" id="p_subject">
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Message"></textarea>
+                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Message" id="p_msg"></textarea>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                <button class="btn btn-primary w-100 py-3" type="submit" onclick="chaitanya();">Send Message</button>
                             </div>
                         </div>
                     </form>
+                    <script>
+                        function chaitanya() {
+                            
+                            var p_name = document.getElementById("p_name");
+                            var p_mail = document.getElementById("p_mail");
+                            var p_subject = document.getElementById("p_subject");
+                            var p_msg = document.getElementById("p_msg");
+                            // var mobile = document.getElementById("mobile").value;
+                            // var textarea = document.getElementById("textarea").value;
+                        
+                            var url = "https://wa.me/+91 9848823311?text="
+                            + "Thanks For Contacting LUNCHBOX...!" + "%0a"  + "%0a"
+                            + "Full Name  : " + p_name + "%0a"
+                            + "Email: " + p_mail + "%0a"
+                            + "Subject : " + p_subject  + "%0a"
+                            + "Message  : " + p_msg + "%0a";
+                            // + "Thank You For Shopping With Us...Come Again!"+ "%0a" +"https://mahalakshmigifts.social";
+                            
+                        
+                            window.open(url, '_blank').focus();
+                        }
+                    </script>
                 </div>
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
                     <iframe class="position-relative rounded w-100 h-100"
