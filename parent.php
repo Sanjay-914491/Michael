@@ -88,8 +88,8 @@ $run = mysqli_fetch_assoc(mysqli_query($con,"select * from parent where pmobile 
             </a>              
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
                     <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                     <a href="price.html" class="nav-item nav-link ">Price plan</a> 
                     <div class="nav-item dropdown">
                    
