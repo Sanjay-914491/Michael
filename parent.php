@@ -49,7 +49,7 @@
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>>SRKR Engineering College, MCR Web Solutions, Bhimavaram, 534204</small>
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>SRKR Engineering College, MCR Web Solutions, Bhimavaram, 534204</small>
                     <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91 9010972333</small>
                     <small class="text-light"><i class="fa fa-envelope-open me-2"></i>bolunchbox@gmail.com</small>
                 </div>
@@ -58,7 +58,7 @@
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://twitter.com/bo_lunchbox"><i class="fab fa-twitter fw-normal"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100091071965266"><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://www.youtube.com/channel/UCLfhE5z624iHsoNADjPUSSg"><i class="fab fa-youtube fw-normal"></i></a>
+             
 
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/bo_lunchbox/"><i class="fab fa-instagram fw-normal"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
@@ -71,7 +71,7 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-3 py-3 py-lg-0">
            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
@@ -79,9 +79,21 @@
             <h4 class="m-0">LUNCH BOX</h4>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                   
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link active">About</a>  
+                    <a href="price.html" class="nav-item nav-link ">Price plan</a> 
+                    <div class="nav-item dropdown">
+                   
+    <a  class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> Menu</a>
+    <div class="dropdown-menu m-0">
+        <a href="profile.html" class="dropdown-item">Profile</a>
+        <a href="notification.html" class="dropdown-item">Notification</a>
+        <a href="payment.html" class="dropdown-item">Payment</a>
+        <a href="track.html" class="dropdown-item">Live Track</a>
+        <a href="#" class="dropdown-item">Log Out</a>
+    </div>
+</div>
+            
                   <!--
                           <a href="service.html" class="nav-item nav-link">Services</a>   
                              <div class="nav-item dropdown">
@@ -92,17 +104,9 @@
                              </div>
                                 </div>
                   -->
-                  <a href="about.html" class="nav-item nav-link active">Price plan</a> 
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                 
+                  
                 </div>
-                <a href="profile.html" class="btn btn-primary py-2 px-4 ms-3">PROFILE</a>
-                <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">NOTIFICATION</a>
-                <a href="track.html" class="btn btn-primary py-2 px-4 ms-3">LIVE TRACK</a>
-                <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">CALENDER</a>
-                <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">LANGUAGE</a>
-                <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">PAYMENT</a>
-                <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">LOG OUT</a>
-
             </div>
         </nav>
 
