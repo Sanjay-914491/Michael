@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
   $run = mysqli_query($con,"insert into parent values ('$pmobile','$pass','$pname','$email','$address','$sname','$school','$rollno','$sclass','$saddr','$gender') ");
   if(isset($run)){
     echo " <script>alert('Data Entered Sucessfully')</script>";
-    // header("location:")
+    header("location:");
   }
 }
 ?>
@@ -45,7 +45,7 @@ if(isset($_POST['submit'])){
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
           </div>
           <div class="input-box">
             <span class="details">Address</span>
@@ -98,7 +98,7 @@ if(isset($_POST['submit'])){
             </label>
           </div>
         </div>
-        <!-- <div class="button">
+        <div class="button">
           <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_LUzFSL4vDJemYo/view" data-text="Pay for Lunch Box" data-color="#F05151" data-size="large">
           <script>
             (function(){
@@ -108,12 +108,32 @@ if(isset($_POST['submit'])){
               rzp && rzp.init && rzp.init()}})();
           </script>
         </div>   
-        </div> -->
+        </div>
         <div class="button">
           <input type="submit" name="submit" value="Register">
         </div>  
       </form>
     </div>
   </div>
+  <script>
+   // Get the email input element
+const emailInput = document.getElementById("email");
+
+// Add an event listener for when the input value changes
+emailInput.addEventListener("input", function() {
+  // Get the input value and remove any leading/trailing whitespace
+  const email = this.value.trim();
+
+  // Check if the email input is not empty and matches a valid email format
+  if (email !== "" && /^[^\s@]+@[^\s@]{1,7}\.[^\s@]{1,4}$/.test(email)) {
+    // Set the input border color to green to indicate success
+    this.style.borderColor = "green";
+  } else {
+    // Set the input border color to red to indicate error
+    this.style.borderColor = "red";
+  }
+});
+
+  </script>
 </body>
 </html>
