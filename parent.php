@@ -76,7 +76,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
-            <h4 class="m-0">LUNCH BOX</h4>
+            <h6 class="m-0">LUNCH BOX</h6>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -90,7 +90,7 @@
         <a href="notification.html" class="dropdown-item">Notification</a>
         <a href="payment.html" class="dropdown-item">Payment</a>
         <a href="track.html" class="dropdown-item">Live Track</a>
-        <a href="#" class="dropdown-item">Log Out</a>
+        <a href="index.html" class="dropdown-item">Log Out</a>
     </div>
 </div>
             
