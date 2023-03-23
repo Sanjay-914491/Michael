@@ -1,6 +1,13 @@
 <?php
-
-?>
+include "connect.php";
+session_start();
+if(empty($_SESSION['uname'])){
+    header("location:login.php");
+}  
+else{
+    $uname = $_SESSION['uname'];
+$run = mysqli_fetch_assoc(mysqli_query($con,"select * from parent where pmobile = '$uname'"));
+}?>
 
 
 <!DOCTYPE html>
@@ -72,11 +79,13 @@
     <!-- Navbar Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-3 py-3 py-lg-0">
-           
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-            <h6 class="m-0">LUNCH BOX</h6>
+        <a href="index.html" class="navbar-brand p-0">
+               <table>
+                    <tr>
+                        <td><h1 class="m-0"><i class="fa fa-user-tie me-lg-4"></i>LUNCH BOX</h1> </td>
+                    </tr>
+                 </table>
+            </a>              
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -147,10 +156,10 @@
                 <div class="col-lg-7">
                     <div class="section-title position-relative pb-3 mb-5">
                         <h5 class="fw-bold text-primary text-uppercase">About Parent</h5>
-                        <h1 class="mb-0"> Sanjay </h1>
+                        <h1 class="mb-0"><?php echo"{$run['pname']}"; ?></h1>
                     </div>
-                    <p class="mb-4">Home Address
-                        </p>
+                    <p class="mb-4"><?php echo"{$run['address']}"; ?></p>
+                    <p class="mb-4"><?php echo"{$run['pmobile']}"; ?></p>
                         <div class="section-title position-relative pb-3 mb-5">
                             <h5 class="fw-bold text-primary text-uppercase">About Child</h5>
                             <h1 class="mb-0"> Joseph </h1>

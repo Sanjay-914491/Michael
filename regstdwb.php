@@ -16,6 +16,7 @@ if(isset($_POST['submit'])){
   $run = mysqli_query($con,"insert into parent values ('$pmobile','$pass','$pname','$email','$address','$sname','$school','$rollno','$sclass','$saddr','$gender') ");
   if(isset($run)){
     echo " <script>alert('Data Entered Sucessfully')</script>";
+    // header("location:")
   }
 }
 ?>
@@ -40,7 +41,7 @@ if(isset($_POST['submit'])){
           </div>
           <div class="input-box">
             <span class="details">Mobile Number</span>
-            <input type="text" name="pmobile" placeholder="Number" required>
+            <input type="tel" name="pmobile" placeholder="Number" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
@@ -97,7 +98,7 @@ if(isset($_POST['submit'])){
             </label>
           </div>
         </div>
-        <div class="button">
+        <!-- <div class="button">
           <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_LUzFSL4vDJemYo/view" data-text="Pay for Lunch Box" data-color="#F05151" data-size="large">
           <script>
             (function(){
@@ -107,7 +108,7 @@ if(isset($_POST['submit'])){
               rzp && rzp.init && rzp.init()}})();
           </script>
         </div>   
-        </div>
+        </div> -->
         <div class="button">
           <input type="submit" name="submit" value="Register">
         </div>  
