@@ -8,13 +8,13 @@ if(isset($_POST['login'])){
   if($run['pass']==$pass){
     $_SESSION['username'] = $uname;
     $_SESSION['password'] = $pass;
-    header("location:home.html");
+    header("location:delivary.html");
   }
 }
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">  
 
 <head>
   <!-- Meta tags  -->
@@ -62,10 +62,10 @@ if(isset($_POST['login'])){
             alt="logo">
           <div class="mt-4">
             <h2 class="text-2xl font-semibold text-slate-600 dark:text-navy-100">
-              Join Now
+            Delivary Agent
             </h2>
             <p class="text-slate-400 dark:text-navy-300">
-              Delivary Agent Login
+               Login Hear
             </p>
           </div>
         </div>
@@ -121,24 +121,17 @@ if(isset($_POST['login'])){
             </div> -->
           <div class="my-7 flex items-center space-x-3">
             <div class="h-px flex-1 bg-slate-200 dark:bg-navy-500"></div>
-            <p class="text-tiny+ uppercase">or sign up as a Parentor Manager</p>
+            <p class="text-tiny+ uppercase">or sign up as a Parentr</p>
             <div class="h-px flex-1 bg-slate-200 dark:bg-navy-500"></div>
           </div>
           <div class="flex space-x-4">
-            <a href="login.php">
+            
             <button
               class="btn w-full space-x-3 border border-slate-300 font-medium text-slate-800 hover:bg-slate-150 focus:bg-slate-150 active:bg-slate-150/80 dark:border-navy-450 dark:text-navy-50 dark:hover:bg-navy-500 dark:focus:bg-navy-500 dark:active:bg-navy-500/90">
               <!-- <img class="h-5.5 w-5.5" src="images/logos/google.svg" alt="logo"> -->
-              <span>Parent</span>
-            </button>
-            </a>
-            <a href="admin.php">
-            <button
-              class="btn w-full space-x-3 border border-slate-300 font-medium text-slate-800 hover:bg-slate-150 focus:bg-slate-150 active:bg-slate-150/80 dark:border-navy-450 dark:text-navy-50 dark:hover:bg-navy-500 dark:focus:bg-navy-500 dark:active:bg-navy-500/90">
-              <!-- <img class="h-5.5 w-5.5" src="images/logos/github.svg" alt="logo"> -->
-              <span>Admin</span>
-            </button>
-            </a>
+              <a href="login.php"><span>Parent</span></a>
+            </button> 
+            
           </div>
         </div>
       </div>
