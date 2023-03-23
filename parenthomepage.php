@@ -1,3 +1,13 @@
+<?php
+
+include "connect.php";
+session_start();
+$uname =$_SESSION['username'];
+$run = mysqli_fetch_assoc(mysqli_query($con,"select * from parent where pmobile = '$uname'"))
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
