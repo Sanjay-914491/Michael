@@ -65,10 +65,10 @@ if(isset($_POST['login'])){
             alt="logo">
           <div class="mt-4">
             <h2 class="text-2xl font-semibold text-slate-600 dark:text-navy-100">
-              Join Now
+            Parent Login
             </h2>
             <p class="text-slate-400 dark:text-navy-300">
-              Parent Login
+              Login Hear
             </p>
           </div>
         </div>
@@ -114,7 +114,7 @@ if(isset($_POST['login'])){
               </p>
             </div> -->
           <button name="login" type="submit"
-            class="btn mt-5 w-full bg-primary font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90">
+            class="btn mt-5 w-full bg-primary font-medium ">
             Login
           </button>
           <!-- <div class="mt-4 text-center text-xs+">
@@ -125,23 +125,15 @@ if(isset($_POST['login'])){
             </div> -->
           <div class="my-7 flex items-center space-x-3">
             <div class="h-px flex-1 bg-slate-200 dark:bg-navy-500"></div>
-            <p class="text-tiny+ uppercase">or sign up as a Delivary Agent or Manager</p>
+            <p class="text-tiny+ uppercase">or <a href="#" class="text-slate-400 hover:underline dark:text-navy-300">Register Now as a Parent</a> as a parent</p>
             <div class="h-px flex-1 bg-slate-200 dark:bg-navy-500"></div>
           </div>
           <div class="flex space-x-4">
-           <a href="delivary.php"><button
+           <button
               class="btn w-full space-x-3 border border-slate-300 font-medium text-slate-800 hover:bg-slate-150 focus:bg-slate-150 active:bg-slate-150/80 dark:border-navy-450 dark:text-navy-50 dark:hover:bg-navy-500 dark:focus:bg-navy-500 dark:active:bg-navy-500/90">
               <!-- <img class="h-5.5 w-5.5" src="images/logos/google.svg" alt="logo"> -->
-              <span>Delivary Agent</span>
+              <a href="delivary.php"><span>Delivary Agent</span></a> 
             </button>
-          </a> 
-          <a href="admin.php">
-            <button
-              class="btn w-full space-x-3 border border-slate-300 font-medium text-slate-800 hover:bg-slate-150 focus:bg-slate-150 active:bg-slate-150/80 dark:border-navy-450 dark:text-navy-50 dark:hover:bg-navy-500 dark:focus:bg-navy-500 dark:active:bg-navy-500/90">
-              <!-- <img class="h-5.5 w-5.5" src="images/logos/github.svg" alt="logo"> -->
-              <span>Admin</span>
-            </button>
-          </a>
           </div>
         </div>
       </div>

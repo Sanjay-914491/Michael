@@ -1,4 +1,18 @@
-﻿<!DOCTYPE html>
+﻿<?php
+include "connect.php";
+session_start();
+if(isset($_POST['login'])){
+  $uname = $_POST['uname'];
+  $pass = $_POST['pass'];
+  $run = mysqli_fetch_assoc(mysqli_query($con ,"select * from admin where uname = '$uname'"));
+  if($run['pass']==$pass){
+    $_SESSION['username'] = $uname;
+    $_SESSION['password'] = $pass;
+    header("location:home.html");
+  }
+}
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -47,10 +61,10 @@
             alt="logo">
           <div class="mt-4">
             <h2 class="text-2xl font-semibold text-slate-600 dark:text-navy-100">
-              Join Now
+              Admin
             </h2>
             <p class="text-slate-400 dark:text-navy-300">
-              Parent Login
+               Login Hear
             </p>
           </div>
         </div>
@@ -106,22 +120,20 @@
             </div> -->
           <div class="my-7 flex items-center space-x-3">
             <div class="h-px flex-1 bg-slate-200 dark:bg-navy-500"></div>
-            <p class="text-tiny+ uppercase">or sign up as a Delivary Agent or Manager</p>
+            <p class="text-tiny+ uppercase">Manage all Orders in Lunch Box</p>
             <div class="h-px flex-1 bg-slate-200 dark:bg-navy-500"></div>
           </div>
           <div class="flex space-x-4">
             <button
               class="btn w-full space-x-3 border border-slate-300 font-medium text-slate-800 hover:bg-slate-150 focus:bg-slate-150 active:bg-slate-150/80 dark:border-navy-450 dark:text-navy-50 dark:hover:bg-navy-500 dark:focus:bg-navy-500 dark:active:bg-navy-500/90">
               <!-- <img class="h-5.5 w-5.5" src="images/logos/google.svg" alt="logo"> -->
-              <span>Delivary Agent</span>
+              <a href="delivary.php"><span>Delivary Agent</span></a>
             </button>
-            <a href="login.php">
             <button
               class="btn w-full space-x-3 border border-slate-300 font-medium text-slate-800 hover:bg-slate-150 focus:bg-slate-150 active:bg-slate-150/80 dark:border-navy-450 dark:text-navy-50 dark:hover:bg-navy-500 dark:focus:bg-navy-500 dark:active:bg-navy-500/90">
               <!-- <img class="h-5.5 w-5.5" src="images/logos/github.svg" alt="logo"> -->
-              <span>Parent</span>
+              <a href="login.php"><span>Parent</span></a>
             </button>
-            </a>
           </div>
         </div>
       </div>
