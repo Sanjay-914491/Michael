@@ -8,7 +8,7 @@ if(isset($_POST['login'])){
   if($run['pass']==$pass){
     $_SESSION['username'] = $uname;
     $_SESSION['password'] = $pass;
-    header("location:home.html");
+    header("location:admin.html");
   }
 }
 ?>
@@ -26,10 +26,10 @@ if(isset($_POST['login'])){
   <link rel="icon" type="image/png" href="images/favicon.png">
 
   <!-- CSS Assets -->
-  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="app.css">
 
   <!-- Javascript Assets -->
-  <script src="js/app.js" defer=""></script>
+  <script src="app.js" defer=""></script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

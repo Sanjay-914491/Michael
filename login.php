@@ -10,7 +10,7 @@ if(isset($_POST['login'])){
   if($run['pass']==$pass){
     $_SESSION['username'] = $uname;
     $_SESSION['password'] = $pass;
-    header("location:home.html");
+    header("location:parent.html");
       
   }
 }
@@ -102,7 +102,7 @@ if(isset($_POST['login'])){
               </svg>
             </span>
           </label>
-          </form>
+          
 
           <!-- <div class="mt-4 flex items-center space-x-2">
               <input class="form-checkbox is-basic h-5 w-5 rounded border-slate-400/70 checked:border-primary checked:bg-primary hover:border-primary focus:border-primary dark:border-navy-400 dark:checked:border-accent dark:checked:bg-accent dark:hover:border-accent dark:focus:border-accent" type="checkbox">
@@ -117,6 +117,7 @@ if(isset($_POST['login'])){
             class="btn mt-5 w-full bg-primary font-medium ">
             Login
           </button>
+          </form>
           <!-- <div class="mt-4 text-center text-xs+">
               <p class="line-clamp-1">
                 <span>Already have an account? </span>
