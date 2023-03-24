@@ -13,7 +13,8 @@ if(isset($_POST['submit'])){
   $sclass = $_POST['sclass'];
   $saddr = $_POST['saddr'];
   $gender = $_POST['gender'];
-  $run = mysqli_query($con,"insert into parent values ('$pmobile','$pass','$pname','$email','$address','$sname','$school','$rollno','$sclass','$saddr','$gender') ");
+  $run1 = mysqli_query($con,"insert into parent values ('$pmobile','$pass','$pname','$email','$address','$school','$rollno') ");
+  $run2 = mysqli_query($con,"insert into student values ('$sname','$school','$rollno','$sclass','$gender')");
   if(isset($run)){
     echo " <script>alert('Data Entered Sucessfully')</script>";
     header("location:");
@@ -28,6 +29,27 @@ if(isset($_POST['submit'])){
     <!---<title> Responsive Registration Form | CodingLab </title>--->
     <link rel="stylesheet" href="hello.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <script>
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 37.7749, lng: -122.4194},
+        zoom: 8
+      });
+
+      var marker = new google.maps.Marker({
+        position: {lat: 37.7749, lng: -122.4194},
+        map: map,
+        draggable: true
+      });
+
+      google.maps.event.addListener(marker, 'dragend', function() {
+        var position = marker.getPosition();
+        document.getElementById('lat').value = position.lat();
+        document.getElementById('lng').value = position.lng();
+      });
+    }
+  </script>
    </head>
 <body>
   <div class="container">
@@ -98,7 +120,7 @@ if(isset($_POST['submit'])){
             </label>
           </div>
         </div>
-        <div class="button">
+        <!-- <div class="button">
           <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_LUzFSL4vDJemYo/view" data-text="Pay for Lunch Box" data-color="#F05151" data-size="large">
           <script>
             (function(){
@@ -108,7 +130,7 @@ if(isset($_POST['submit'])){
               rzp && rzp.init && rzp.init()}})();
           </script>
         </div>   
-        </div>
+        </div> -->
         <div class="button">
           <input type="submit" name="submit" value="Register">
         </div>  

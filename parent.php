@@ -6,7 +6,13 @@ if(empty($_SESSION['uname'])){
 }  
 else{
     $uname = $_SESSION['uname'];
-$run = mysqli_fetch_assoc(mysqli_query($con,"select * from parent where pmobile = '$uname'"));
+    $run = mysqli_fetch_assoc(mysqli_query($con,"select * from parent where pmobile = '$uname'"));
+    $roll = $run['rollno'];
+    $runn = mysqli_fetch_assoc(mysqli_query($con,"SELECT * FROM `student` WHERE rollno = '$roll'"));
+    $sch = $runn['school'];
+    $runr = mysqli_fetch_assoc(mysqli_query($con,"SELECT * FROM `schools` WHERE `SNO`=$sch"));
+    // echo "{$runn['roll']}";
+
 }?>
 
 
@@ -50,8 +56,7 @@ $run = mysqli_fetch_assoc(mysqli_query($con,"select * from parent where pmobile 
     </div>
     <!-- Spinner End -->
 
-      <h1 id="upside"></h1>
-    <!-- Topbar Start -->
+        <!-- Topbar Start -->
     <div class="container-fluid bg-dark px-5 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
@@ -78,8 +83,8 @@ $run = mysqli_fetch_assoc(mysqli_query($con,"select * from parent where pmobile 
 
     <!-- Navbar Start -->
     <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark px-3 py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-3 py-3 py-lg-0" style=" background: rgb(29,253,241); background: linear-gradient(51deg, rgba(29,253,241,1) 0%, rgba(202,200,18,1) 100%); "  >
+        <a href="parent.php" class="navbar-brand p-0">
                <table>
                     <tr>
                         <td><h1 class="m-0"><i class="fa fa-user-tie me-lg-4"></i>LUNCH BOX</h1> </td>
@@ -106,16 +111,7 @@ $run = mysqli_fetch_assoc(mysqli_query($con,"select * from parent where pmobile 
 </div>
         </nav>
 
-        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
-            <div class="row py-5">
-                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-                    <h1 class="display-4 text-white animated zoomIn">LUNCH BOX</h1>
-                    <a href="" class="h5 text-white">B</a>
-                    <i class="far fa-circle text-white px-2"></i>
-                   
-                </div>
-            </div>
-        </div>
+        
     </div>
     <!-- Navbar End -->
     <!-- Full Screen Search Start -->
@@ -137,22 +133,62 @@ $run = mysqli_fetch_assoc(mysqli_query($con,"select * from parent where pmobile 
     <!-- Full Screen Search End -->
  
     <!-- About Start -->
+    <br><br>
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-7">
                     <div class="section-title position-relative pb-3 mb-5">
                         <h5 class="fw-bold text-primary text-uppercase">About Parent</h5>
-                        <h1 class="mb-0"><?php echo"{$run['pname']}"; ?></h1>
+                        
+
+                            <table style="width: 90%;">
+                                <tr style="text-align: center;">
+                                    <td>
+                                        <h1 class="mb-0"> <?php echo"{$run['pname']}" ?> </h1>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-0"><?php echo"{$run['pmobile']}" ?> </h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-0"><?php echo"{$run['address']}" ?>   </h4>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td>
+                                        <h4 class="mb-0"> <?php echo"{$run['email']}" ?>  </h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-0"><?php echo"{$run['email']}" ?></h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-0"> <?php echo"{$run['school']}" ?> </h4>
+                                    </td>
+                                </tr>
+                            </table>
+                           
+
+
                     </div>
-                    <p class="mb-4"><?php echo"{$run['address']}"; ?></p>
-                    <p class="mb-4"><?php echo"{$run['pmobile']}"; ?></p>
-                        <div class="section-title position-relative pb-3 mb-5">
+                    <div class="section-title position-relative pb-3 mb-5">
                             <h5 class="fw-bold text-primary text-uppercase">About Child</h5>
-                            <h1 class="mb-0"> Joseph </h1>
-                        </div>
-                        <p class="mb-4"> School Address
-                            </p>
+                            <table style="width: 90%;">
+                                <tr style="text-align: center;">
+                                    <td>
+                                        <h1 class="mb-0"><?php echo"{$runn['sname']}" ?>  </h1>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-0"><?php echo"{$runn['sclass']}./{$run['rollno']}" ?> </h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-0"><?php echo"{$run['address']}" ?> </h4>
+                                    </td>
+                                </tr>   
+                            </table>
+                            
+                            
+                    </div>
+                     
                  <!--
                        <div class="row g-0 mb-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
@@ -185,92 +221,13 @@ $run = mysqli_fetch_assoc(mysqli_query($con,"select * from parent where pmobile 
             </div>
         </div>
     </div>
+    </div>
     <!-- About End -->
 
-    <!-- Team Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Team Members</h5>
-                <h1 class="mb-0">Patners of our Business</h1>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
+    
 
 
-    <!-- Vendor Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5 mb-5">
-            <div class="bg-white">
-                <div class="owl-carousel vendor-carousel">
-                    <img src="img/vendor-1.jpg" alt="">
-                    <img src="img/vendor-2.jpg" alt="">
-                    <img src="img/vendor-3.jpg" alt="">
-                    <img src="img/vendor-4.jpg" alt="">
-                    <img src="img/vendor-5.jpg" alt="">
-                    <img src="img/vendor-6.jpg" alt="">
-                    <img src="img/vendor-7.jpg" alt="">
-                    <img src="img/vendor-8.jpg" alt="">
-                    <img src="img/vendor-9.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Vendor End -->
+    
     
 
     <!-- Footer Start -->
