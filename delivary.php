@@ -4,7 +4,7 @@ session_start();
 if(isset($_POST['login'])){
   $uname = $_POST['uname'];
   $pass = $_POST['pass'];
-  $run = mysqli_fetch_assoc(mysqli_query($con ,"select * from delivary where pmobile  = '$uname'"));
+  $run = mysqli_fetch_assoc(mysqli_query($con ,"select * from delivary where uname  = '$uname'"));
   if($run['pass']==$pass){
     $_SESSION['username'] = $uname;
     $_SESSION['password'] = $pass;
@@ -23,7 +23,7 @@ if(isset($_POST['login'])){
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-  <title>Lineone - Sign Up v1</title>
+  <title>Delivery Agent Login</title>
   <link rel="icon" type="image/png" href="images/favicon.png">
 
   <!-- CSS Assets -->
@@ -62,13 +62,14 @@ if(isset($_POST['login'])){
             alt="logo">
           <div class="mt-4">
             <h2 class="text-2xl font-semibold text-slate-600 dark:text-navy-100">
-            Delivary Agent
+            Delivery Agent
             </h2>
             <p class="text-slate-400 dark:text-navy-300">
-               Login Hear
+               Login Here
             </p>
           </div>
         </div>
+        <form action="" method="post">
         <div class="card mt-5 rounded-lg p-5 lg:p-7">
           <label class="relative flex">
             <input name="uname"
@@ -85,7 +86,7 @@ if(isset($_POST['login'])){
             </span>
           </label>
           <label class="relative mt-4 flex">
-            <input 
+            <input name="pass" 
               class="form-input peer w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:z-10 hover:border-slate-400 focus:z-10 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
               placeholder="Password" type="password">
             <span 
@@ -109,10 +110,11 @@ if(isset($_POST['login'])){
                 </a>
               </p>
             </div> -->
-          <button
+          <button name="login"
             class="btn mt-5 w-full bg-primary font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90">
             Login
           </button>
+          </form>
           <!-- <div class="mt-4 text-center text-xs+">
               <p class="line-clamp-1">
                 <span>Already have an account? </span>

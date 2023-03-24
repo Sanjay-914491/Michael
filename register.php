@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
   $saddr = $_POST['saddr'];
   $gender = $_POST['gender'];
   $run1 = mysqli_query($con,"insert into parent values ('$pmobile','$pass','$pname','$email','$address','$school','$rollno') ");
-  $run2 = mysqli_query($con,"insert into student values ('$sname','$school','$rollno','$sclass','$gender')");
+  $run2 = mysqli_query($con,"insert into student values ('$pmobile','$sname','$school','$rollno','$sclass','$gender')");
   $run3 = mysqli_query($con,"insert into day values ('$pmobile',0)");
   $_SESSION['uname'] = $uname;
   header("location:pay.php");
@@ -63,8 +63,8 @@ if(isset($_POST['submit'])){
           </div>
           <div class="input-box">
             <span class="details">Mobile Number</span>
-            <input type="tel" id="phone" name="phone"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
-            <small>Format: 123-456-7890</small>
+            <input type="tel" id="phone" name="pmobile" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"required>
+            <small>Format: 123456 7890</small>
           </div>
           <div class="input-box">
             <span class="details">Email</span>

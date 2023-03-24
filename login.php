@@ -26,7 +26,7 @@ if(isset($_POST['login'])){
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-  <title>Lineone - Sign Up v1</title>
+  <title>Parent Login</title>
   <link rel="icon" type="image/png" href="images/favicon.png">
 
   <!-- CSS Assets -->
@@ -133,7 +133,7 @@ if(isset($_POST['login'])){
            <button
               class="btn w-full space-x-3 border border-slate-300 font-medium text-slate-800 hover:bg-slate-150 focus:bg-slate-150 active:bg-slate-150/80 dark:border-navy-450 dark:text-navy-50 dark:hover:bg-navy-500 dark:focus:bg-navy-500 dark:active:bg-navy-500/90">
               <!-- <img class="h-5.5 w-5.5" src="images/logos/google.svg" alt="logo"> -->
-              <a href="delivary.php"><span>Delivary Agent</span></a> 
+              <a href="delivary.php"><span>Delivery Agent</span></a> 
             </button>
           </div>
         </div>

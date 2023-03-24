@@ -1,12 +1,7 @@
 <?php
 include "connect.php";
 session_start();
-if(empty($_SESSION['uname'])){
-    header("location:login.php");
-} 
-else{
-    $uname = $_SESSION['uname'];
-}
+
 ?>
 
 
