@@ -18,11 +18,7 @@ if(isset($_POST['submit'])){
   $run2 = mysqli_query($con,"insert into student values ('$sname','$school','$rollno','$sclass','$gender')");
   $run3 = mysqli_query($con,"insert into day values ('$pmobile',0)");
   
-  if(isset($run)){
-    echo " <script>alert('Data Entered Sucessfully')</script>";
-    
-    header("location:parent.php");
-  } 
+  header("location:pay.php");
 }
 ?>
 <!DOCTYPE html>

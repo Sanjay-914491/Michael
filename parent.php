@@ -95,7 +95,7 @@ else{
                 <div class="navbar-nav ms-auto py-0">
                     <a href="#profile" class="nav-item nav-link">Profile</a>
                     <a href="#track" class="nav-item nav-link">Live Track</a>
-                    <a href="notification.html" class="nav-item nav-link ">Notification</a> 
+                    <a href="#notify" class="nav-item nav-link ">Notification</a> 
                     <div class="nav-item dropdown">
                    
     <a  class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> Menu</a>
@@ -211,7 +211,7 @@ else{
 
 
     <!-- Notification stated -->
-    <section>
+    <section id="notify">
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
