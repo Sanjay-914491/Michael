@@ -4,7 +4,7 @@ session_start();
 if(isset($_POST['login'])){
   $uname = $_POST['uname'];
   $pass = $_POST['pass'];
-  $run = mysqli_fetch_assoc(mysqli_query($con ,"select * from delivary where uname = '$uname'"));
+  $run = mysqli_fetch_assoc(mysqli_query($con ,"select * from delivary where pmobile  = '$uname'"));
   if($run['pass']==$pass){
     $_SESSION['username'] = $uname;
     $_SESSION['password'] = $pass;
