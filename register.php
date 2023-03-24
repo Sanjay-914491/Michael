@@ -67,7 +67,8 @@ if(isset($_POST['submit'])){
           </div>
           <div class="input-box">
             <span class="details">Mobile Number</span>
-            <input type="tel" name="pmobile" placeholder="Number" required>
+            <input type="tel" id="phone" name="phone"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+            <small>Format: 123-456-7890</small>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
@@ -151,7 +152,7 @@ emailInput.addEventListener("input", function() {
   const email = this.value.trim();
 
   // Check if the email input is not empty and matches a valid email format
-  if (email !== "" && /^[^\s@]+@[^\s@]{1,7}\.[^\s@]{1,4}$/.test(email)) {
+  if (email !== "" && /^[^\s@]+@[^\s@]{1,10}\.[^\s@]{1,11}$/.test(email)) {
     // Set the input border color to green to indicate success
     this.style.borderColor = "green";
   } else {
