@@ -1,3 +1,3 @@
 <?php
-$con = new mysqli('localhost','saipraveen','Shiva143@Bhavani','lunchbox');
+$con = new mysqli('localhost','root','','lunchbox');
 ?>
