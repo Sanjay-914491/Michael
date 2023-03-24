@@ -1,3 +1,10 @@
+<?php
+include "connect.php";
+$resellt= mysqli_fetch_assoc(mysqli_query($con,"select sname,pmobile from day"));
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -87,19 +94,6 @@
         <a href="index.html" class="dropdown-item">Log Out</a>
     </div>
 </div>
-            
-                  <!--
-                          <a href="service.html" class="nav-item nav-link">Services</a>   
-                             <div class="nav-item dropdown">
-                           <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
-                           <div class="dropdown-menu m-0">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                             </div>
-                                </div>
-                  -->
-                 
-                  
                 </div>
 
             </div>
@@ -150,23 +144,16 @@
                 <div class="col-lg-7">
                     <div class="section-title position-relative pb-3 mb-5">
                         <h5 class="fw-bold text-primary text-uppercase">About Parent</h5>
-                        
-
                             <table style="width: 90%;">
                                 <tr style="text-align: center;">
-                                    <td>
-                                        <h1 class="mb-0"> Sanjay </h1>
-                                    </td>
-                                    <td>
-                                        <h4 class="mb-0">9848823311  </h4>
-                                    </td>
-                                    <td>
-                                        <h4 class="mb-0">Address  </h4>
-                                    </td>
+                                    <form action="#" method="post">
+                                       
+                                </form>
+                                   
                                 </tr>
                                 <tr style="text-align: center;">
                                     <td>
-                                        <h4 class="mb-0"> vehicle </h4>
+                                        <h4 class="mb-0"> vehicle    </h4>
                                     </td>
                                     <td>
                                         <h4 class="mb-0">Area of pickup </h4>
