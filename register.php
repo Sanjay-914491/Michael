@@ -1,6 +1,7 @@
 <?php
 
 include "connect.php";
+session_start();
 if(isset($_POST['submit'])){
   $pmobile = $_POST['pmobile'];
   $pass = $_POST['pass'];
@@ -15,10 +16,13 @@ if(isset($_POST['submit'])){
   $gender = $_POST['gender'];
   $run1 = mysqli_query($con,"insert into parent values ('$pmobile','$pass','$pname','$email','$address','$school','$rollno') ");
   $run2 = mysqli_query($con,"insert into student values ('$sname','$school','$rollno','$sclass','$gender')");
+  $run3 = mysqli_query($con,"insert into day values ('$pmobile',0)");
+  
   if(isset($run)){
     echo " <script>alert('Data Entered Sucessfully')</script>";
-    header("location:");
-  }
+    
+    header("location:parent.php");
+  } 
 }
 ?>
 <!DOCTYPE html>
