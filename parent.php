@@ -94,8 +94,8 @@ else{
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="#profile" class="nav-item nav-link">Profile</a>
-                    <a href="#track" class="nav-item nav-link">Live Track</a>
                     <a href="#notify" class="nav-item nav-link ">Notification</a> 
+                    <a href="#track" class="nav-item nav-link">Live Track</a>
                     <div class="nav-item dropdown">
                    
     <a  class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> Menu</a>

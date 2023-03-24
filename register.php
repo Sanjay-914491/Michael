@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
   $run1 = mysqli_query($con,"insert into parent values ('$pmobile','$pass','$pname','$email','$address','$school','$rollno') ");
   $run2 = mysqli_query($con,"insert into student values ('$sname','$school','$rollno','$sclass','$gender')");
   $run3 = mysqli_query($con,"insert into day values ('$pmobile',0)");
-  
+  $_SESSION['uname'] = $uname;
   header("location:pay.php");
 }
 ?>

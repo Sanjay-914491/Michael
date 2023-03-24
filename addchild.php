@@ -1,6 +1,7 @@
 <?php
 
 include "connect.php";
+session_start();
 if(isset($_POST['submit'])){
   $pmobile = $_POST['pmobile'];
   $pass = $_POST['pass'];
@@ -13,11 +14,11 @@ if(isset($_POST['submit'])){
   $sclass = $_POST['sclass'];
   $saddr = $_POST['saddr'];
   $gender = $_POST['gender'];
-  $run = mysqli_query($con,"insert into parent values ('$pmobile','$pass','$pname','$email','$address','$sname','$school','$rollno','$sclass','$saddr','$gender') ");
-  if(isset($run)){
-    echo " <script>alert('Data Entered Sucessfully')</script>";
-    header("location:");
-  }
+  $run1 = mysqli_query($con,"insert into parent values ('$pmobile','$pass','$pname','$email','$address','$school','$rollno') ");
+  $run2 = mysqli_query($con,"insert into student values ('$sname','$school','$rollno','$sclass','$gender')");
+  $run3 = mysqli_query($con,"insert into day values ('$pmobile',0)");
+  $_SESSION['uname'] = $uname;
+  header("location:pay.php");
 }
 ?>
 <!DOCTYPE html>
@@ -83,17 +84,7 @@ if(isset($_POST['submit'])){
             </label>
           </div>
         </div>
-          <!-- <div class="button">
-            <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_LUzFSL4vDJemYo/view" data-text="Pay for Lunch Box" data-color="#F05151" data-size="large">
-            <script>
-              (function(){
-                var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
-                if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
-                s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
-                rzp && rzp.init && rzp.init()}})();
-            </script>
-          </div>   
-          </div> -->
+          
         <div class="button">
           <input type="submit" name="submit" value="Register">
         </div>  
@@ -110,7 +101,7 @@ emailInput.addEventListener("input", function() {
   const email = this.value.trim();
 
   // Check if the email input is not empty and matches a valid email format
-  if (email !== "" && /^[^\s@]+@[^\s@]{1,7}\.[^\s@]{1,4}$/.test(email)) {
+  if (email !== "" && /^[^\s@]+@[^\s@]{1,10}\.[^\s@]{1,11}$/.test(email)) {
     // Set the input border color to green to indicate success
     this.style.borderColor = "green";
   } else {
