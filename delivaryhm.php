@@ -7,7 +7,7 @@ $resellt= mysqli_fetch_assoc(mysqli_query($con,"select sname,pmobile from day"))
 
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- All Setted Shiva and this is sending to git as All set SHiva -->
 <head>
     <meta charset="utf-8">
     <title>BO LUNCH BOX</title>

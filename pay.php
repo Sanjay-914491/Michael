@@ -14,7 +14,7 @@ session_start();
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
-
+<!-- All Setted Shiva and this is sending to git as All set SHiva -->
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 

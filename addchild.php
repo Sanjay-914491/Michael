@@ -20,6 +20,7 @@ if(isset($_POST['submit'])){
   header("location:pay.php");
 }
 ?>
+<!-- All Setted Shiva and this is sending to git as All set SHiva -->
 <!DOCTYPE html>
 <!-- Created By CodingLab - www.codinglabweb.com -->
 <html lang="en" dir="ltr">
